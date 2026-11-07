@@ -77,3 +77,11 @@ cmake --build build --config Release --target miniadmin_gui
 ## 📄 License
 
 Distributed under project-specific open/recreation guidelines. See source files for individual module headers.
+
+---
+
+## Media
+
+![](https://github.com/Istyu/miniadmin3/blob/master/media/img1.png)
+![](https://github.com/Istyu/miniadmin3/blob/master/media/img2.png)
+![](https://github.com/Istyu/miniadmin3/blob/master/media/img3.png)
