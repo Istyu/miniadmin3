@@ -1,0 +1,521 @@
+; miniAdmin3 – Sprachdatei (UTF-8)
+; Format: Schlüssel=Text   \n = neue Zeile   %1, %2 … = vom Programm eingesetzter Wert
+language.name=Deutsch
+language.prefix=de
+
+; ---- Menü
+menu.file=Datei
+menu.settings=Einstellungen…
+menu.guidDb=GUID-Datenbank…
+menu.masterList=Masterserverliste…
+menu.lastBans=Letzte Bans…
+menu.shortcuts=Tastenkürzel…
+menu.saveServers=Serverliste speichern
+menu.exit=Beenden
+menu.serverList=Serverliste
+menu.join=Server betreten
+menu.rconCheck=RCON-Check
+menu.ftpEdit=Serverdateien per FTP bearbeiten…
+menu.addServer=Server hinzufügen…
+menu.refreshAll=Alle Server aktualisieren
+menu.autoRefresh=Automatisch aktualisieren (1 s)
+menu.editServer=Server bearbeiten…
+menu.removeServer=Server löschen
+menu.removeAll=Alle Server löschen
+menu.playerList=Spielerliste
+menu.playersRefresh=Spielerliste aktualisieren (rcon status)
+menu.kickAll=Alle Spieler kicken
+menu.about=Info
+
+; ---- Hauptfenster
+main.addrCue=Hier IP:PORT eingeben, um einen Server hinzuzufügen
+main.passCue=rcon-Passwort
+main.setPassword=Passwort setzen
+col.info=Info
+col.ping=Ping
+col.serverName=Servername
+col.gtMap=Spieltyp / Map
+col.players=Spieler
+col.hostPort=Host:Port
+col.hostInfo=Hostinfo
+col.variable=Variable
+col.content=Inhalt
+col.name=Name
+col.score=Punkte
+col.alias=Alias
+col.rate=Rate
+col.value=Wert
+col.description=Beschreibung
+tab.players=Spielerliste
+tab.maps=Mapliste
+tab.gametypes=Spieltypen
+tab.weapons=Waffen
+tab.perks=Perks
+tab.serverVars=Servervariablen
+tab.punkbuster=PunkBuster
+tab.pam=PAM-MOD
+tab.console=Rcon-Konsole
+tab.mods=MODs
+
+; ---- Spielerliste
+players.msgCue=Nachricht
+players.tell=Nachricht (tell)
+players.say=An alle (say)
+players.kick=Kicken
+players.ban=Bannen
+players.tempban=Temporär bannen
+players.refresh=Aktualisieren (rcon)
+players.empty.noServer=Wähle einen Server aus der Liste.
+players.empty.offline=Der Server ist nicht erreichbar.
+players.empty.noPlayers=Keine Spieler auf dem Server.
+player.who=%1 (Slot %2)
+
+; ---- Mapliste / Spieltypen / Rcon-Konsole
+maps.load=Liste abrufen
+maps.change=Map wechseln
+maps.restart=Map neu laden
+maps.fastRestart=Map schnell neustarten
+maps.mapMode=Map/Modus laden
+gt.set=Setzen
+gt.valueCue=neuer Wert (Enter)
+console.inputCue=rcon-Befehl (Enter = senden)
+console.send=Senden
+console.noReply=(keine Antwort)
+console.sent=(gesendet)
+console.statusUnparsed=[die status-Antwort ist nicht auswertbar, Rohtext:]
+console.statusNoPlayers=[aus der status-Antwort konnten keine Spieler gelesen werden, Rohtext:]
+
+; ---- Statusleiste
+status.querying=Server werden abgefragt…
+status.serversOnline=%1/%2 Server erreichbar
+status.geoLoaded=geoip.csv: %1 IPv4-Bereiche geladen
+status.geoMissing=geoip.csv nicht geladen (fehlt oder unbekanntes Format)
+status.sel.online= – erreichbar, %1 Spieler
+status.sel.offline= – nicht erreichbar
+status.sel.noRcon= – kein rcon-Passwort (ohne GUID/IP/Alias)
+status.selectServer=Wähle zuerst einen Server.
+status.selectPlayer=Wähle einen Spieler aus der Liste.
+status.selectMap=Wähle eine Map.
+status.selectMode=Wähle einen Spielmodus.
+status.typeMessage=Gib eine Nachricht in das Feld ein.
+status.noRconPw=Für diesen Server ist kein rcon-Passwort angegeben.
+status.rconWait=rcon: warte auf das Ende des vorherigen Befehls…
+status.noReply=Keine Antwort (falsches Passwort oder Server nicht erreichbar).
+status.badRconPw=Falsches rcon-Passwort.
+status.statusUnparsed=Die status-Antwort ist nicht auswertbar – der Rohtext steht im Reiter Rcon-Konsole.
+status.statusUnknown=Unbekanntes status-Format – der Rohtext steht im Reiter Rcon-Konsole.
+status.playersRcon=%1 Spieler (rcon status)
+status.mapCount=%1 Maps
+status.gtNeedsRcon=Zum Ändern des Spieltyps ist ein rcon-Login nötig.
+status.needsRcon=Dafür ist ein rcon-Login nötig.
+mod.varList=MOD-Variablenliste:
+mod.cmdList=MOD-Befehlsliste:
+col.command=Befehl
+status.selectCmd=Wähle einen Befehl.
+ask.modCmd=Auf dem Server ausführen: %1?\n%2
+pam.set=PAM-Modus setzen
+pam.none=Für dieses Spiel gibt es keinen PAM-Modus (codcfg\\%1.pmm).
+status.selectPamMode=Wähle einen PAM-Modus.
+status.pamModeSet=PAM-Modus wird gesetzt: %1 …
+pb.plist=PB-Spielerliste
+pb.ver=PB-Version
+pb.getss=Screenshots anfordern
+pb.update=PB aktualisieren
+pb.restart=PB neu starten
+sv.cfgGroup=CFG ausführen
+sv.run=Ausführen
+sv.pwGroup=Serverpasswort
+sv.otherGroup=Weitere Variablen
+sv.pwCue=leer = kein Passwort
+status.selectCfg=Wähle (oder tippe) eine cfg-Datei.
+ask.execCfg=Auf dem Server ausführen: exec %1?
+ask.noPassword=(kein Passwort)
+ask.setPassword=Serverpasswort auf %1 setzen?
+status.cfgCount=%1 cfg-Dateien auf dem Server
+status.noValue=Der Server hat keinen Wert geliefert.
+status.gtVarSet=%1 gesetzt.
+status.selectVar=Wähle eine Variable.
+status.done=Fertig.
+status.sent=Gesendet.
+status.sentNoReply=Gesendet – der Server hat nicht geantwortet.
+status.kickAllNeedsRcon=Zum Kicken aller Spieler ist ein rcon-Login nötig.
+status.noKickable=Keine Spieler zum Kicken.
+status.kickAll.progress=Alle Spieler kicken: %1/%2 …
+status.kickAll.done=Alle Spieler gekickt (%1).
+status.rconPwSet=Das rcon-Passwort wurde gesetzt.
+status.rconPwCleared=Das rcon-Passwort wurde gelöscht.
+status.serverEdited=Der Server wurde geändert.
+status.allRemoved=Alle Server wurden gelöscht.
+status.serversSaved=Serverliste gespeichert.
+status.saveServersFailed=Die Serverliste konnte nicht gespeichert werden.
+status.saveBansFailed=lastbans.db konnte nicht gespeichert werden.
+status.saveGuidsFailed=guids.dat konnte nicht gespeichert werden.
+status.guidsSaved=guids.dat gespeichert.
+status.exported=Exportiert: %1
+status.unbanSent=Unban gesendet: %1
+status.settingsSaved=Einstellungen gespeichert.
+status.saveSettingsFailed=Die Einstellungen konnten nicht gespeichert werden (settings.ini).
+
+; ---- Meldungen, Fragen
+msg.badAddress=Ungültige Adresse. Format: IP:PORT
+msg.serverExists=Dieser Server ist bereits in der Liste.
+msg.slotUnknown=Die Slot-Nummer des Spielers ist noch unbekannt: getstatus liefert keine Slots.\nKlicke auf „Aktualisieren (rcon)“, um sie aus dem rcon status zu holen.
+ask.removeServer=Diesen Server aus der Liste löschen?\n\n%1
+ask.removeAll=Wirklich ALLE Server aus der Liste löschen? (%1)\n\nDas kann nicht rückgängig gemacht werden.
+ask.kick=%1 kicken?
+ask.ban=%1 BANNEN?
+ask.tempban=%1 temporär bannen?
+ask.kickAll=Wirklich ALLE Spieler (%1) von diesem Server kicken?\n%2
+ask.mapChange=Map wechseln zu %1?
+ask.mapModeChange=Map/Modus laden: %1 / %2?
+ask.gtChange=Spieltyp auf %1 wechseln?\n(set g_gametype, danach map_restart)
+ask.mapRestart=Map neu laden (map_restart)?
+ask.fastRestart=Map schnell neustarten (fast_restart)?
+
+; ---- Schaltflächen, Dateidialog
+btn.ok=OK
+btn.cancel=Abbrechen
+btn.close=Schließen
+file.programs=Programme (*.exe)
+file.all=Alle Dateien
+file.guidDb=GUID-Datenbank (guids.dat; *.dat; *.gid)
+
+; ---- Einstellungen
+settings.title=Einstellungen
+settings.refresh.group=Serveraktualisierung (automatisch)
+settings.refresh.all=Mit allen sichtbaren Servern kommunizieren
+settings.refresh.selected=Nur mit dem ausgewählten Server kommunizieren (für langsame Internetverbindungen)
+settings.refresh.two=Nur mit 2 Servern gleichzeitig kommunizieren (für langsame Internetverbindungen)
+settings.paths.group=Pfade der Call of Duty Versionen (Server betreten)
+settings.paths.colGame=Spiel;Protokoll
+settings.paths.colVersion=Version
+settings.paths.colExe=Exe-Pfad
+settings.paths.hint=Wähle eine Zeile und gib die .exe des Spiels an. Gibt es für die Serverversion keinen Pfad, wird eine beliebige eingetragene Zeile des Spiels verwendet.
+settings.browse=Durchsuchen…
+settings.browseTitle=Startdatei von Call of Duty
+settings.launch.group=Zusätzliche Parameter, die beim CoD-Start übergeben werden
+settings.cmd.group=Befehl/Programm, das beim Betreten eines Servers ausgeführt wird
+settings.cmd.hint=(z. B. ein Sprachchat-Programm; Pfade mit Leerzeichen in Anführungszeichen setzen)
+settings.join.group=Beim Betreten eines Servers soll das Programm
+settings.join.keep=Offen bleiben
+settings.join.minimize=Minimiert werden (kein Netzwerkverkehr)
+settings.join.close=Beendet werden
+settings.add.group=Server hinzufügen
+settings.add.top=An den Anfang der Liste
+settings.add.bottom=An das Ende der Liste
+settings.add.after=Nach Eintrag:
+settings.nick=Dein Nickname (Präfix der Nachrichten):
+settings.nick.hint=Standard: ^9mini^4Admin: ^7 (^Zahlen sind Farbcodes, ^7 ist Weiß, die Standardfarbe)
+settings.language=Sprache
+settings.pingButton=Ping-Anzeige…
+settings.log=Befehle protokollieren (cmdlog.txt)
+settings.other.group=Sonstiges
+settings.windowPos=Position des Hauptfensters speichern
+settings.colored=Farbige Spieler-/Servernamen
+settings.askDelete=Vor dem Löschen eines Servers nachfragen
+
+; ---- Ping-Anzeige
+ping.title=Ping-Einstellungen
+ping.coloring=Ping-Farbgebung
+ping.level=Pinglevel %1
+ping.meter=Ping-Anzeige
+ping.enabled=Eingeschaltet
+ping.colored=Farbig
+ping.maxLevel=Maximallevel
+
+; ---- Server betreten
+join.title=Server betreten
+join.server=Server:
+join.name=Spielername
+join.password=Passwort
+join.connect=Verbinden
+color.0=Schwarz
+color.1=Rot
+color.2=Grün
+color.3=Gelb
+color.4=Dunkelblau
+color.5=Türkis
+color.6=Rosa
+color.7=Weiß
+color.8=Teamfarbe
+color.9=Grau
+rconcheck.noPw=Für diesen Server ist kein RCON-Passwort eingetragen!
+rconcheck.ok=Der RCON-Login war erfolgreich!
+rconcheck.fail=Der RCON-Login ist fehlgeschlagen!
+rconcheck.noReply=Der Server hat nicht geantwortet (falsches Passwort oder Server nicht erreichbar).
+join.noPath=Für dieses Spiel ist kein Installationspfad angegeben: %1\n\nEinstellen unter: Datei → Einstellungen → Pfade der Call of Duty Versionen.
+join.exeMissing=Die angegebene Startdatei wurde nicht gefunden:\n%1
+join.launchFailed=Das Spiel konnte nicht gestartet werden (Fehlercode: %1).
+join.cmdFailed=Das Spiel wurde gestartet, aber der angegebene Befehl/das Programm konnte nicht ausgeführt werden.
+join.joining=Server betreten: %1
+
+; ---- Server hinzufügen / bearbeiten
+server.address=Server IP:Port
+server.rconPw=rcon-Passwort
+server.rconPwHint=Leer lassen, falls nicht bekannt!
+edit.hidePw=Passwort im Protokoll verbergen (cmdlog.txt)
+add.title=Neuen Server hinzufügen
+add.ownName=Eigener Servername
+add.ownNameHint=leer lassen für automatische Abfrage
+add.format=Die Serveradresse muss folgendes Format haben:
+add.example=83.122.98.10:28961 oder ds8af33.23.100.25:29384dsid93
+add.filtered=Die IP:Port-Kombination wird automatisch herausgefiltert
+edit.title=Server bearbeiten
+edit.format=Die Serveradresse muss folgendes Format haben: IP:PORT
+
+; ---- GUID-Datenbank
+guid.title=GUID-Datenbank
+guid.colName=Letzter Name
+guid.colIp=Letzte IP
+guid.colSeen=Zuletzt gesehen
+guid.searchGroup=Nickname/GUID/IP suchen
+guid.searchTerm=Suchbegriff:
+guid.search=Suchen
+guid.results=Ergebnisse:
+guid.searchHint=Gib einen Namen, eine GUID oder eine IP ein.
+guid.noResult=Keine Treffer.
+guid.count=GUIDs in der Datenbank: %1
+guid.deleteAll=GUID-Datenbank leeren
+guid.askDeleteAll=Die gesamte GUID-Datenbank löschen? (%1 Einträge)\n\nVon guids.dat bleibt eine einmalige Sicherungskopie (guids.dat.bak).
+guid.export=Guidliste exportieren
+guid.exportFailed=Der Export ist fehlgeschlagen.
+guid.import=Guidliste importieren
+guid.importBadFile=Die Datei ist nicht lesbar oder hat ein unbekanntes Format.\nErwartetes Format: die 98-Byte-Einträge von guids.dat.
+guid.importResult=%1 neue GUIDs, %2 aktualisiert, %3 unverändert / übersprungen.
+
+; ---- Letzte Bans
+bans.title=Letzte Bans
+bans.windowTitle=Letzte Bans (miniAdmin, PunkBuster)
+bans.colName=Name
+bans.colServer=Server
+bans.colTime=Zeitpunkt
+bans.unban=Ausgewählten Spieler entbannen
+bans.selectPlayer=Wähle einen Spieler in der Liste.
+bans.serverMissing=Der Server (%1) ist nicht in der Serverliste.\nFüge ihn mit rcon-Passwort hinzu und versuche es erneut.
+bans.noRcon=Für diesen Server gibt es keinen rcon-Login (Passwort fehlt oder ist falsch, oder der Server ist nicht erreichbar).
+bans.askUnban=Ban aufheben?\n%1
+
+; ---- Spieltypen: Beschreibung der eingebauten Variablen
+gtvar.scorelimit=Punktelimit (0 = keins)
+gtvar.timelimit=Zeitlimit in Minuten (0 = keins)
+gtvar.numlives=Anzahl der Leben (0 = unbegrenzt)
+gtvar.roundlimit=Anzahl der Runden
+gtvar.winlimit=Zum Matchsieg nötige Rundensiege
+gtvar.roundswitch=Seitenwechsel alle so vielen Runden
+gtvar.playerrespawndelay=Respawn-Verzögerung in Sekunden
+gtvar.waverespawndelay=Wellen-Respawn: alle respawnen gemeinsam alle so vielen Sekunden (0 = aus)
+gtvar.bombtimer=Bomben-Timer in Sekunden
+gtvar.planttime=Zeit zum Legen der Bombe in Sekunden
+gtvar.defusetime=Zeit zum Entschärfen der Bombe in Sekunden
+gtvar.multibomb=Jeder Angreifer trägt eine Bombe (1 = ja)
+gtvar.hotpotato=Gemeinsamer Bomben-Timer: die Restzeit bleibt nach dem Entschärfen erhalten (1 = ja)
+gtvar.flagcapturetime=Zeit zum Einnehmen einer Flagge in Sekunden
+gtvar.roundlength=Rundendauer in Minuten
+gtvar.graceperiod=Schonfrist zu Rundenbeginn in Sekunden (so lange kann man noch einsteigen)
+gtvar.respawn_wave_time=Wellen-Respawn: alle respawnen gemeinsam alle so vielen Sekunden
+gtvar.alivepointtime=Ein lebender Spieler erhält alle so vielen Sekunden einen Punkt
+gtvar.showcarrier=Der Träger des Ziels wird auf dem Kompass angezeigt (1 = ja)
+gtvar.startrounddelay=Wartezeit vor Rundenbeginn in Sekunden
+gtvar.endrounddelay=Wartezeit nach Rundenende in Sekunden
+gtvar.clearscoreeachround=Punkte zu Beginn jeder Runde zurücksetzen (1 = ja)
+gtvar.globalbattlechatterprobability=Wie oft Kampfrufe (Battle Chatter) zu hören sind
+gtvar.enemycarriervisible=Der gegnerische Flaggenträger wird auf dem Kompass angezeigt
+gtvar.flagrespawntime=Zeit bis zum erneuten Erscheinen der Flagge in Sekunden
+gtvar.idleflagreturntime=Eine fallen gelassene Flagge kehrt nach so vielen Sekunden zur Basis zurück
+gtvar.touchreturn=Das Berühren der eigenen fallen gelassenen Flagge bringt sie zurück (1 = ja)
+gtvar.showoncompass=Die Flaggen werden auf dem Kompass angezeigt (1 = ja)
+gtvar.koth_autodestroytime=Das Hauptquartier zerstört sich nach so vielen Sekunden selbst
+gtvar.koth_spawntime=Zeit bis zum Erscheinen eines neuen Hauptquartiers in Sekunden
+gtvar.koth_kothmode=Klassischer King-of-the-Hill-Modus (0 = aus, 1 = ein)
+gtvar.koth_capturetime=Zeit zum Einnehmen des Hauptquartiers in Sekunden
+gtvar.koth_destroytime=Zeit zum Zerstören des Hauptquartiers in Sekunden
+gtvar.koth_delayplayer=Das Team, das das Hauptquartier hält, respawnt verzögert (0 = aus, 1 = ein)
+gtvar.koth_spawndelay=Respawn-Verzögerung in Sekunden für das Team, das das Hauptquartier hält (wenn koth_delayPlayer = 1)
+gtvar.twar_capturetime=Zeit zum Einnehmen einer Flagge in Sekunden
+gtvar.twar_finalfighttimelimit=Zeitlimit des Endkampfs
+gtvar.twar_showenemycount=Anzahl der Gegner anzeigen (0 = aus, 1 = ein)
+gtvar.twar_momentumenabled=Momentum-System ein- oder ausschalten (0 = aus, 1 = ein)
+gtvar.twar_momentummax=Höchster Momentum-Wert
+
+; ---- Waffen / Perks: Beschreibungsvorlagen (%1, %2 = Namen wie im Spiel)
+wpvar.weapon=%1 erlauben (0 = aus, 1 = ein)
+wpvar.attach=%1: Aufsatz %2 erlauben (0 = aus, 1 = ein)
+wpvar.attachNone=%1: Variante ohne Aufsatz erlauben (0 = aus, 1 = ein)
+wpvar.allowdrop=Klasse %1: ein getöteter Spieler lässt die Waffe fallen (0 = nein, 1 = ja)
+wpvar.movespeed=Klasse %1: Multiplikator der Laufgeschwindigkeit
+wpvar.classlimit=Klasse %1: höchstens so viele Spieler können sie wählen
+wpvar.classitem=Klasse %1, Standardausrüstung: %2
+wpvar.perk=Perk %1 erlauben (0 = aus, 1 = ein)
+wpvar.perkvalue=Stärke des Perks %1 (Prozent)
+wpvar.flakjacketmax=Flak Jacket: Obergrenze des Explosionsschadens
+wpvar.laststand=Last Stand: ein niedergestreckter Spieler verblutet nach so vielen Sekunden
+wpcat.assault=Sturmgewehre
+wpcat.smg=Maschinenpistolen
+wpcat.shotgun=Schrotflinten
+wpcat.lmg=Leichte Maschinengewehre
+wpcat.sniper=Scharfschützengewehre
+wpcat.pistol=Pistolen
+wpitem.primary=Primärwaffe
+wpitem.primary_attachment=Aufsatz der Primärwaffe
+wpitem.secondary=Sekundärwaffe
+wpitem.secondary_attachment=Aufsatz der Sekundärwaffe
+wpitem.perk=Perk 1
+wpitem.perk2=Perk 2
+wpitem.perk3=Perk 3
+wpitem.grenade=Art der Spezialgranate
+wpitem.camo=Tarnung
+wpitem.frags=Anzahl der Splittergranaten
+wpitem.special=Anzahl der Spezialgranaten
+
+; ---- Info
+about.origTitle=Über das originale miniAdmin3
+about.origBy=Erstellt von: %1
+about.origNote=Die Website und das Forum des Originalprogramms (muckl.dyndns.org) sind nicht mehr erreichbar, daher entfallen hier die Menüpunkte Forum, Änderungen und Automatisches Update.
+about.rebuild=Eine Neuentwicklung des originalen miniAdmin3 %1 (Supermuckl, Deois Gaming) als natives Win32-C++-Programm.
+about.rebuiltBy=Neu entwickelt von: %1
+about.origData=Die originalen Datendateien (Kartenbilder, Flaggen, Spielmodus- und Waffenlisten usw.) und Bilder stammen aus dem Originalprogramm.
+about.geo=Länderdaten (wenn geoip.csv von DB-IP stammt, CC BY 4.0):
+
+; ---- Masterszerver lista
+ms.title=Masterserverliste
+ms.tabList=Serverliste
+ms.tabFilter=Filter
+ms.col.address=Serveradresse
+ms.col.ping=Ping
+ms.col.name=Servername
+ms.col.map=Map/Typ
+ms.col.players=Spieler
+ms.col.maxPing=Max. Ping
+ms.col.mod=MOD
+ms.col.pure=Pure
+ms.col.password=Passwort
+ms.scanGroup=Serverliste abfragen
+ms.refresh=Aktualisieren
+ms.version=COD-Version:
+ms.searchGroup=Einen Server suchen
+ms.searchName=Servername
+ms.search=Suchen
+ms.servers=Server:
+ms.visible=Sichtbar:
+ms.close=Schließen
+ms.add=Server in die Serverliste übernehmen
+ms.f.map=Mapname
+ms.f.gametype=Spieltyp
+ms.f.pure=Pure
+ms.f.password=Passwort
+ms.f.mod=Mod
+ms.f.voice=Voice
+ms.f.active=Aktiv
+ms.f.maxPing=Max. Ping
+ms.f.maxClients=Max. Spieler
+ms.f.players=Spieler
+ms.f.condition=Bedingung
+ms.f.notEmptyNotFull=Server ist nicht leer und nicht voll
+ms.f.country=Serverstandort (z. B. HU):
+ms.f.apply=Filter anwenden
+ms.status.querying=Masterserver wird abgefragt…
+ms.status.noMaster=Keine Antwort vom Masterserver!
+ms.status.scanning=Server werden abgefragt: %1 / %2
+ms.status.done=Fertig: %1 Server haben geantwortet, von %2 Adressen.
+ms.status.added=Zur Serverliste hinzugefügt: %1
+ms.status.notFound=Nicht gefunden: %1
+
+; ---- FTP
+ftp.group=FTP-Zugang
+ftp.active=FTP aktiv
+ftp.passive=Passives FTP-Protokoll
+ftp.server=FTP-Server:
+ftp.port=FTP-Port:
+ftp.test=Test
+ftp.user=FTP-Benutzer:
+ftp.password=FTP-Passwort:
+ftp.codPath=COD-Pfad:
+ftp.pbssPath=PB-SS-Pfad:
+ftp.pbssAuto=PB-SS automatisch / rekursiv (FTP-Löschen deaktiviert)
+ftp.connecting=Verbinde…
+ftp.testOk=Verbunden: %1 (%2 Ordner, %3 Dateien)
+ftp.testPassive=– ging nur im passiven Modus, ich habe ihn eingeschaltet.
+ftp.error=FTP-Fehler:
+ftp.pickTitle=Ordner auf dem FTP wählen
+ftp.pickHint=Doppelklick: Ordner öffnen.
+ftp.pickThis=Dieser Ordner
+ftp.up=↑ einen Ordner höher
+ftp.editorTitle=Serverdateien per FTP bearbeiten
+ftp.dirs=Ordner auf dem FTP
+ftp.files=Dateien auf dem FTP
+ftp.open=Öffnen
+ftp.save=Speichern
+ftp.loading=Lade…
+ftp.downloading=Herunterladen…
+ftp.uploading=Speichere…
+ftp.listed=%1 Ordner, %2 Dateien
+ftp.opened=Geöffnet: %1 (%2 Bytes)
+ftp.saved=Datei gespeichert: %1
+ftp.passiveUsed=(im passiven Modus)
+ftp.askDiscard=Die Änderungen an %1 sind nicht gespeichert. Verwerfen?
+ftp.askSave=Diese Datei auf dem Server überschreiben?\n%1
+ftp.notActive=Für diesen Server ist FTP nicht aktiviert.\n\nEinstellen: Server bearbeiten → FTP-Zugang.
+
+; ---- Jogok
+rights.title=Rechte
+rights.label=Rechte:
+rights.changePw=Passwort ändern:
+rights.security=Sicherheitssystem
+rights.enable=aktivieren
+rights.disable=deaktivieren
+rights.list=Rechte:
+rights.hint=Aktiviert lassen sich Adresse, RCON-Passwort und FTP nicht ändern, und die nicht angehakten Funktionen sind für diesen Server gesperrt. Deaktivieren nur mit dem Passwort.
+rights.emptyPw=Passwortfeld leer!
+rights.wrongPw=Falsches Passwort!
+rights.denied=Dafür hast du auf diesem Server kein Recht: %1 (Server bearbeiten → Rechte)
+rights.pwLocked=Für diesen Server ist das Sicherheitssystem aktiv: das RCON-Passwort kann nicht geändert werden.
+rights.noFtpEdit=Du hast kein Recht, auf diesem Server Dateien zu speichern (FTP-EditFiles).
+right.kick=Kicken
+right.ban=Bannen
+right.restart=Map-Restart/Neuladen
+right.mapload=Mapwechsel
+right.rotationedit=Maprotation bearbeiten
+right.gametype=Spieltyp wechseln
+right.gconfig=Spieltyp-Einstellungen
+right.execcfg=Server-CFG ausführen
+right.setpw=Öffentliches Passwort setzen
+right.weaponedit=Waffen bearbeiten
+right.varlistedit=Servervariablen bearbeiten
+right.pb=PunkBuster
+right.pam=PAM-MOD
+right.mods=MODs
+right.console=RCON-Konsole
+right.perk=Perks einstellen
+right.pbss_view=PB-Screenshots ansehen
+right.pbss_delftp=PB-Screenshots auf dem FTP löschen
+right.ftp_editfiles=FTP: Dateien speichern
+right.ftp_viewfiles=FTP: Dateien ansehen
+
+; ---- Gyorsgombok
+qc.title=Tastenkürzel (Quick-Commando)
+qc.enable=Tastenkürzel aktivieren
+qc.fastRestart=Map-Schnellrestart:
+qc.reload=Map neu laden:
+qc.mapChange=Mapwechsel:
+qc.gametype=Spieltyp:
+qc.killCod=COD-Prozess beenden:
+qc.clear=Löschen
+qc.aliases=Mapwechsel-Aliase
+qc.colMap=Mapname
+qc.colAlias=Alias-Befehl
+qc.add=Eintrag hinzufügen
+qc.del=Eintrag löschen
+qc.addTitle=Mapwechsel-Alias hinzufügen
+qc.addHint=Der Alias: was du nach dem Mapwechsel-Kürzel eintippst (Buchstaben, Ziffern).
+qc.help=Mapwechsel:\n[Mapwechsel-Kürzel] → Map-Alias → [ENTER] → die Map wechselt\n\nMapwechsel abbrechen:\n[Mapwechsel-Kürzel] → falscher Map-Alias → [BACKSPACE] → Befehl abgebrochen\n\nSpieltyp ändern:\n[Spieltyp-Kürzel] → tdm → [ENTER] → tdm wird geladen\n\nDie Befehle gehen an den ausgewählten Server; die Kürzel funktionieren auch im Spiel.
+qc.saved=Tastenkürzel gespeichert.
+qc.saveFailed=Die Tastenkürzel konnten nicht gespeichert werden (shortcutctrl.cfg / mapaliases.dat).
+qc.registerFailed=Dieses Tastenkürzel konnte nicht registriert werden: %1
+qc.noServer=Tastenkürzel: wähle einen Server mit RCON-Passwort.
+qc.typeMap=Tastenkürzel: Map-Alias eintippen, dann Enter (Backspace: abbrechen).
+qc.typeGametype=Tastenkürzel: Spieltyp eintippen (z. B. tdm), dann Enter (Backspace: abbrechen).
+qc.cancelled=Tastenkürzel: abgebrochen.
+qc.unknownAlias=Tastenkürzel: unbekannter Map-Alias: %1
+qc.badGametype=Tastenkürzel: ungültiger Spieltyp: %1
+qc.killed=COD beendet (%1 Prozess).
+qc.noCod=COD läuft nicht.

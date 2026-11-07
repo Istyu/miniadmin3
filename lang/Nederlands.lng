@@ -1,0 +1,521 @@
+; miniAdmin3 – taalbestand (UTF-8)
+; Formaat: sleutel=tekst   \n = nieuwe regel   %1, %2 … = waarde die het programma invult
+language.name=Nederlands
+language.prefix=nl
+
+; ---- menu
+menu.file=Bestand
+menu.settings=Instellingen…
+menu.guidDb=GUID-database…
+menu.masterList=Masterserverlijst…
+menu.lastBans=Laatste bans…
+menu.shortcuts=Sneltoetsen…
+menu.saveServers=Serverlijst opslaan
+menu.exit=Afsluiten
+menu.serverList=Serverlijst
+menu.join=Server joinen
+menu.rconCheck=Rcon-controle
+menu.ftpEdit=Serverbestanden bewerken via FTP…
+menu.addServer=Server toevoegen…
+menu.refreshAll=Alle servers verversen
+menu.autoRefresh=Automatisch verversen (1 s)
+menu.editServer=Server bewerken…
+menu.removeServer=Server verwijderen
+menu.removeAll=Alle servers verwijderen
+menu.playerList=Spelerlijst
+menu.playersRefresh=Spelerlijst verversen (rcon status)
+menu.kickAll=Alle spelers kicken
+menu.about=Info
+
+; ---- hoofdvenster
+main.addrCue=Voer hier IP:POORT in om een server toe te voegen
+main.passCue=rcon-wachtwoord
+main.setPassword=Wachtwoord instellen
+col.info=Info
+col.ping=Ping
+col.serverName=Servernaam
+col.gtMap=Speltype / Map
+col.players=Spelers
+col.hostPort=Host:Poort
+col.hostInfo=Hostinfo
+col.variable=Variabele
+col.content=Inhoud
+col.name=Naam
+col.score=Score
+col.alias=Alias
+col.rate=Rate
+col.value=Waarde
+col.description=Omschrijving
+tab.players=Spelerlijst
+tab.maps=Maplijst
+tab.gametypes=Speltypen
+tab.weapons=Wapens
+tab.perks=Perks
+tab.serverVars=Servervariabelen
+tab.punkbuster=PunkBuster
+tab.pam=PAM-MOD
+tab.console=Rcon-console
+tab.mods=MODs
+
+; ---- tabblad Spelerlijst
+players.msgCue=Bericht
+players.tell=Bericht (tell)
+players.say=Aan iedereen (say)
+players.kick=Kick
+players.ban=Ban
+players.tempban=Tijdelijke ban
+players.refresh=Verversen (rcon)
+players.empty.noServer=Kies een server uit de lijst.
+players.empty.offline=De server is niet bereikbaar.
+players.empty.noPlayers=Er zijn geen spelers op de server.
+player.who=%1 (slot %2)
+
+; ---- Maplijst / Speltypen / Rcon-console
+maps.load=Lijst ophalen
+maps.change=Map wisselen
+maps.restart=Map herstarten
+maps.fastRestart=Map snel herstarten
+maps.mapMode=Map/modus wisselen
+gt.set=Instellen
+gt.valueCue=nieuwe waarde (Enter)
+console.inputCue=rcon-commando (Enter = verzenden)
+console.send=Verzenden
+console.noReply=(geen antwoord)
+console.sent=(verzonden)
+console.statusUnparsed=[het status-antwoord is niet te verwerken, ruwe tekst:]
+console.statusNoPlayers=[uit het status-antwoord konden geen spelers worden gelezen, ruwe tekst:]
+
+; ---- statusbalk
+status.querying=Servers worden opgevraagd…
+status.serversOnline=%1/%2 servers bereikbaar
+status.geoLoaded=geoip.csv: %1 IPv4-bereiken geladen
+status.geoMissing=geoip.csv niet geladen (ontbreekt of onbekend formaat)
+status.sel.online= – bereikbaar, %1 spelers
+status.sel.offline= – niet bereikbaar
+status.sel.noRcon= – geen rcon-wachtwoord (zonder GUID/IP/Alias)
+status.selectServer=Kies eerst een server.
+status.selectPlayer=Kies een speler uit de lijst.
+status.selectMap=Kies een map.
+status.selectMode=Kies een spelmodus.
+status.typeMessage=Typ een bericht in het veld.
+status.noRconPw=Voor deze server is geen rcon-wachtwoord ingesteld.
+status.rconWait=rcon: wachten tot het vorige commando klaar is…
+status.noReply=Geen antwoord (verkeerd wachtwoord of server niet bereikbaar).
+status.badRconPw=Verkeerd rcon-wachtwoord.
+status.statusUnparsed=Het status-antwoord is niet te verwerken – de ruwe tekst staat op het tabblad Rcon-console.
+status.statusUnknown=Onbekend status-formaat – de ruwe tekst staat op het tabblad Rcon-console.
+status.playersRcon=%1 spelers (rcon status)
+status.mapCount=%1 maps
+status.gtNeedsRcon=Voor het wisselen van speltype is een rcon-login nodig.
+status.needsRcon=Hiervoor is een rcon-login nodig.
+mod.varList=MOD-variabelenlijst:
+mod.cmdList=MOD-opdrachtenlijst:
+col.command=Opdracht
+status.selectCmd=Kies een opdracht.
+ask.modCmd=Op de server uitvoeren: %1?\n%2
+pam.set=PAM-modus instellen
+pam.none=Voor dit spel is er geen PAM-modus (codcfg\\%1.pmm).
+status.selectPamMode=Kies een PAM-modus.
+status.pamModeSet=PAM-modus wordt ingesteld: %1 …
+pb.plist=PB-spelerslijst
+pb.ver=PB-versie
+pb.getss=Screenshots opvragen
+pb.update=PB bijwerken
+pb.restart=PB herstarten
+sv.cfgGroup=CFG uitvoeren
+sv.run=Uitvoeren
+sv.pwGroup=Serverwachtwoord
+sv.otherGroup=Overige variabelen
+sv.pwCue=leeg = geen wachtwoord
+status.selectCfg=Kies (of typ) een cfg-bestand.
+ask.execCfg=Op de server uitvoeren: exec %1?
+ask.noPassword=(geen wachtwoord)
+ask.setPassword=Serverwachtwoord instellen op %1?
+status.cfgCount=%1 cfg-bestanden op de server
+status.noValue=De server gaf geen waarde terug.
+status.gtVarSet=%1 ingesteld.
+status.selectVar=Kies een variabele.
+status.done=Klaar.
+status.sent=Verzonden.
+status.sentNoReply=Verzonden – de server heeft niet geantwoord.
+status.kickAllNeedsRcon=Voor het kicken van alle spelers is een rcon-login nodig.
+status.noKickable=Er zijn geen spelers om te kicken.
+status.kickAll.progress=Alle spelers kicken: %1/%2 …
+status.kickAll.done=Alle spelers gekickt (%1).
+status.rconPwSet=Het rcon-wachtwoord is ingesteld.
+status.rconPwCleared=Het rcon-wachtwoord is gewist.
+status.serverEdited=De server is gewijzigd.
+status.allRemoved=Alle servers zijn verwijderd.
+status.serversSaved=Serverlijst opgeslagen.
+status.saveServersFailed=De serverlijst kon niet worden opgeslagen.
+status.saveBansFailed=lastbans.db kon niet worden opgeslagen.
+status.saveGuidsFailed=guids.dat kon niet worden opgeslagen.
+status.guidsSaved=guids.dat opgeslagen.
+status.exported=Geëxporteerd: %1
+status.unbanSent=Unban verzonden: %1
+status.settingsSaved=Instellingen opgeslagen.
+status.saveSettingsFailed=De instellingen konden niet worden opgeslagen (settings.ini).
+
+; ---- meldingen, vragen
+msg.badAddress=Ongeldig adres. Formaat: IP:POORT
+msg.serverExists=Deze server staat al in de lijst.
+msg.slotUnknown=Het slotnummer van de speler is nog onbekend: getstatus geeft geen slots door.\nKlik op "Verversen (rcon)" om het via rcon status op te halen.
+ask.removeServer=Deze server uit de lijst verwijderen?\n\n%1
+ask.removeAll=ALLE servers uit de lijst verwijderen? (%1)\n\nDit kan niet ongedaan worden gemaakt.
+ask.kick=%1 kicken?
+ask.ban=%1 BANNEN?
+ask.tempban=%1 tijdelijk bannen?
+ask.kickAll=ALLE spelers (%1) van deze server kicken?\n%2
+ask.mapChange=Wisselen naar map %1?
+ask.mapModeChange=Map/modus wisselen: %1 / %2?
+ask.gtChange=Speltype wijzigen naar %1?\n(set g_gametype, daarna map_restart)
+ask.mapRestart=De map herstarten (map_restart)?
+ask.fastRestart=Map snel herstarten (fast_restart)?
+
+; ---- knoppen, bestandsdialoog
+btn.ok=OK
+btn.cancel=Annuleren
+btn.close=Sluiten
+file.programs=Programma's (*.exe)
+file.all=Alle bestanden
+file.guidDb=GUID-database (guids.dat; *.dat; *.gid)
+
+; ---- Instellingen
+settings.title=Instellingen
+settings.refresh.group=Servers verversen (automatisch)
+settings.refresh.all=Communiceren met alle zichtbare servers
+settings.refresh.selected=Alleen communiceren met de geselecteerde server (bij een trage internetverbinding)
+settings.refresh.two=Met maximaal 2 servers tegelijk communiceren (bij een trage internetverbinding)
+settings.paths.group=Installatiepaden van Call of Duty (Server joinen)
+settings.paths.colGame=Spel;protocol
+settings.paths.colVersion=Versie
+settings.paths.colExe=Exe-pad
+settings.paths.hint=Selecteer een regel en geef de .exe van het spel op. Is er geen pad voor de serverversie, dan wordt een willekeurige ingestelde regel van het spel gebruikt.
+settings.browse=Bladeren…
+settings.browseTitle=Startbestand van Call of Duty
+settings.launch.group=Extra parameters, meegegeven bij het starten van CoD
+settings.cmd.group=Commando/programma dat wordt gestart bij het joinen van een server
+settings.cmd.hint=(bijv. een voicechatprogramma; zet paden met spaties tussen aanhalingstekens)
+settings.join.group=Bij het joinen van een server moet het programma
+settings.join.keep=Open blijven
+settings.join.minimize=Minimaliseren (geen netwerkverkeer)
+settings.join.close=Afsluiten
+settings.add.group=Server toevoegen
+settings.add.top=Aan het begin van de lijst
+settings.add.bottom=Aan het einde van de lijst
+settings.add.after=Na item:
+settings.nick=Je nickname (voorvoegsel van berichten):
+settings.nick.hint=Standaard: ^9mini^4Admin: ^7 (^cijfers zijn kleurcodes, ^7 is wit, de standaardkleur)
+settings.language=Taal
+settings.pingButton=Pingweergave…
+settings.log=Opdrachten loggen (cmdlog.txt)
+settings.other.group=Overig
+settings.windowPos=Positie van het hoofdvenster opslaan
+settings.colored=Gekleurde speler-/servernamen
+settings.askDelete=Vragen voor het verwijderen van een server
+
+; ---- Pingweergave
+ping.title=Pinginstellingen
+ping.coloring=Pingkleuring
+ping.level=Pingniveau %1
+ping.meter=Pingmeter
+ping.enabled=Ingeschakeld
+ping.colored=Gekleurd
+ping.maxLevel=Max. niveau
+
+; ---- Server joinen
+join.title=Server joinen
+join.server=Server:
+join.name=Spelersnaam
+join.password=Wachtwoord
+join.connect=Verbinden
+color.0=Zwart
+color.1=Rood
+color.2=Groen
+color.3=Geel
+color.4=Donkerblauw
+color.5=Turquoise
+color.6=Roze
+color.7=Wit
+color.8=Teamkleur
+color.9=Grijs
+rconcheck.noPw=Voor deze server is geen rcon-wachtwoord ingesteld!
+rconcheck.ok=De rcon-login is gelukt!
+rconcheck.fail=De rcon-login is mislukt!
+rconcheck.noReply=De server antwoordde niet (verkeerd wachtwoord of server onbereikbaar).
+join.noPath=Voor dit spel is geen installatiepad ingesteld: %1\n\nStel het in via Bestand → Instellingen → Installatiepaden van Call of Duty.
+join.exeMissing=Het opgegeven startbestand is niet gevonden:\n%1
+join.launchFailed=Het spel kon niet worden gestart (foutcode: %1).
+join.cmdFailed=Het spel is gestart, maar het opgegeven commando/programma kon niet worden uitgevoerd.
+join.joining=Server joinen: %1
+
+; ---- Server toevoegen / bewerken
+server.address=Server IP:Poort
+server.rconPw=Rcon-wachtwoord
+server.rconPwHint=Leeg laten indien onbekend!
+edit.hidePw=Wachtwoord verbergen in het logboek (cmdlog.txt)
+add.title=Nieuwe server toevoegen
+add.ownName=Eigen servernaam
+add.ownNameHint=leeg laten voor automatisch opvragen
+add.format=Het serveradres moet dit formaat hebben:
+add.example=83.122.98.10:28961 of ds8af33.23.100.25:29384dsid93
+add.filtered=De IP:Poort-combinatie wordt automatisch uitgefilterd
+edit.title=Server bewerken
+edit.format=Het serveradres moet dit formaat hebben: IP:POORT
+
+; ---- GUID-database
+guid.title=GUID-database
+guid.colName=Laatste naam
+guid.colIp=Laatste IP
+guid.colSeen=Laatst gezien
+guid.searchGroup=Nickname/GUID/IP zoeken
+guid.searchTerm=Zoekterm:
+guid.search=Zoeken
+guid.results=Resultaten:
+guid.searchHint=Voer een naam, GUID of IP in.
+guid.noResult=Geen resultaten.
+guid.count=GUID's in de database: %1
+guid.deleteAll=GUID-database wissen
+guid.askDeleteAll=De volledige GUID-database verwijderen? (%1 records)\n\nVan guids.dat blijft een eenmalige reservekopie bewaard (guids.dat.bak).
+guid.export=Guidlijst exporteren
+guid.exportFailed=Het exporteren is mislukt.
+guid.import=Guidlijst importeren
+guid.importBadFile=Het bestand is niet leesbaar of heeft een onbekend formaat.\nVerwacht formaat: de records van 98 bytes uit guids.dat.
+guid.importResult=%1 nieuwe GUID's, %2 bijgewerkt, %3 ongewijzigd / overgeslagen.
+
+; ---- Laatste bans
+bans.title=Laatste bans
+bans.windowTitle=Laatste bans (miniAdmin, PunkBuster)
+bans.colName=Naam
+bans.colServer=Server
+bans.colTime=Tijdstip
+bans.unban=Geselecteerde speler unbannen
+bans.selectPlayer=Kies een speler in de lijst.
+bans.serverMissing=De server (%1) staat niet in de serverlijst.\nVoeg hem toe met het rcon-wachtwoord en probeer het opnieuw.
+bans.noRcon=Er is geen rcon-login voor deze server (wachtwoord ontbreekt of is fout, of de server is niet bereikbaar).
+bans.askUnban=Ban opheffen?\n%1
+
+; ---- Speltypen: omschrijving van de ingebouwde variabelen
+gtvar.scorelimit=Scorelimiet (0 = geen)
+gtvar.timelimit=Tijdlimiet in minuten (0 = geen)
+gtvar.numlives=Aantal levens (0 = onbeperkt)
+gtvar.roundlimit=Aantal rondes
+gtvar.winlimit=Gewonnen rondes nodig om de match te winnen
+gtvar.roundswitch=Van kant wisselen om de zoveel rondes
+gtvar.playerrespawndelay=Respawnvertraging in seconden
+gtvar.waverespawndelay=Golfrespawn: iedereen respawnt samen om de zoveel seconden (0 = uit)
+gtvar.bombtimer=Bomtimer in seconden
+gtvar.planttime=Tijd om de bom te plaatsen in seconden
+gtvar.defusetime=Tijd om de bom te ontmantelen in seconden
+gtvar.multibomb=Elke aanvaller draagt een bom (1 = ja)
+gtvar.hotpotato=Gedeelde bomtimer: de resterende tijd blijft na het ontmantelen behouden (1 = ja)
+gtvar.flagcapturetime=Tijd om een vlag te veroveren in seconden
+gtvar.roundlength=Duur van een ronde in minuten
+gtvar.graceperiod=Respijttijd aan het begin van de ronde in seconden (zo lang kun je nog meedoen)
+gtvar.respawn_wave_time=Golfrespawn: iedereen respawnt samen om de zoveel seconden
+gtvar.alivepointtime=Een levende speler krijgt om de zoveel seconden een punt
+gtvar.showcarrier=De drager van het doel wordt op het kompas getoond (1 = ja)
+gtvar.startrounddelay=Wachttijd voor het begin van een ronde in seconden
+gtvar.endrounddelay=Wachttijd na het einde van een ronde in seconden
+gtvar.clearscoreeachround=Scores aan het begin van elke ronde wissen (1 = ja)
+gtvar.globalbattlechatterprobability=Hoe vaak gevechtskreten (battle chatter) te horen zijn
+gtvar.enemycarriervisible=De vijandelijke vlagdrager wordt op het kompas getoond
+gtvar.flagrespawntime=Tijd tot de vlag opnieuw verschijnt in seconden
+gtvar.idleflagreturntime=Een gevallen vlag keert na zoveel seconden terug naar de basis
+gtvar.touchreturn=Je eigen gevallen vlag aanraken brengt hem terug (1 = ja)
+gtvar.showoncompass=De vlaggen worden op het kompas getoond (1 = ja)
+gtvar.koth_autodestroytime=Het hoofdkwartier vernietigt zichzelf na zoveel seconden
+gtvar.koth_spawntime=Tijd tot een nieuw hoofdkwartier verschijnt in seconden
+gtvar.koth_kothmode=Klassieke King of the Hill-modus (0 = uit, 1 = aan)
+gtvar.koth_capturetime=Tijd om het hoofdkwartier te veroveren in seconden
+gtvar.koth_destroytime=Tijd om het hoofdkwartier te vernietigen in seconden
+gtvar.koth_delayplayer=Het team dat het hoofdkwartier bezit, respawnt met vertraging (0 = uit, 1 = aan)
+gtvar.koth_spawndelay=Respawnvertraging in seconden voor het team dat het hoofdkwartier bezit (als koth_delayPlayer = 1)
+gtvar.twar_capturetime=Tijd om een vlag te veroveren in seconden
+gtvar.twar_finalfighttimelimit=Tijdlimiet van het eindgevecht
+gtvar.twar_showenemycount=Aantal vijanden tonen (0 = uit, 1 = aan)
+gtvar.twar_momentumenabled=Momentumsysteem aan of uit (0 = uit, 1 = aan)
+gtvar.twar_momentummax=Hoogste momentumwaarde
+
+; ---- Wapens / Perks: beschrijvingssjablonen (%1, %2 = namen zoals in het spel)
+wpvar.weapon=%1 toestaan (0 = uit, 1 = aan)
+wpvar.attach=%1: hulpstuk %2 toestaan (0 = uit, 1 = aan)
+wpvar.attachNone=%1: versie zonder hulpstuk toestaan (0 = uit, 1 = aan)
+wpvar.allowdrop=Klasse %1: een gedode speler laat zijn wapen vallen (0 = nee, 1 = ja)
+wpvar.movespeed=Klasse %1: vermenigvuldiger van de loopsnelheid
+wpvar.classlimit=Klasse %1: maximaal zoveel spelers kunnen deze klasse kiezen
+wpvar.classitem=Klasse %1, standaarduitrusting: %2
+wpvar.perk=Perk %1 toestaan (0 = uit, 1 = aan)
+wpvar.perkvalue=Sterkte van de perk %1 (procent)
+wpvar.flakjacketmax=Flak Jacket: bovengrens van de explosieschade
+wpvar.laststand=Last Stand: een neergeschoten speler bloedt na zoveel seconden dood
+wpcat.assault=Aanvalsgeweren
+wpcat.smg=Machinepistolen
+wpcat.shotgun=Jachtgeweren
+wpcat.lmg=Lichte machinegeweren
+wpcat.sniper=Sluipschuttersgeweren
+wpcat.pistol=Pistolen
+wpitem.primary=primair wapen
+wpitem.primary_attachment=hulpstuk van het primaire wapen
+wpitem.secondary=secundair wapen
+wpitem.secondary_attachment=hulpstuk van het secundaire wapen
+wpitem.perk=perk 1
+wpitem.perk2=perk 2
+wpitem.perk3=perk 3
+wpitem.grenade=soort speciale granaat
+wpitem.camo=camouflage
+wpitem.frags=aantal fragmentatiegranaten
+wpitem.special=aantal speciale granaten
+
+; ---- Info
+about.origTitle=Over de originele miniAdmin3
+about.origBy=Gemaakt door: %1
+about.origNote=De website en het forum van het originele programma (muckl.dyndns.org) zijn niet meer bereikbaar, daarom ontbreken hier de menu-items Forum, Wijzigingen en Automatisch bijwerken.
+about.rebuild=Een herbouw van de originele miniAdmin3 %1 (Supermuckl, Deois Gaming) als native Win32 C++-programma.
+about.rebuiltBy=Herbouwd door: %1
+about.origData=De originele gegevensbestanden (mapafbeeldingen, vlaggen, spelmodus- en wapenlijsten enz.) en afbeeldingen komen uit het originele programma.
+about.geo=Landgegevens (als geoip.csv van DB-IP komt, CC BY 4.0):
+
+; ---- Masterszerver lista
+ms.title=Masterserverlijst
+ms.tabList=Serverlijst
+ms.tabFilter=Filter
+ms.col.address=Serveradres
+ms.col.ping=Ping
+ms.col.name=Servernaam
+ms.col.map=Map/Type
+ms.col.players=Spelers
+ms.col.maxPing=Max. ping
+ms.col.mod=MOD
+ms.col.pure=Puur
+ms.col.password=Wachtwoord
+ms.scanGroup=Serverlijst scannen
+ms.refresh=Vernieuwen
+ms.version=COD-versie:
+ms.searchGroup=Een server zoeken
+ms.searchName=Servernaam
+ms.search=Zoeken
+ms.servers=Servers:
+ms.visible=Zichtbaar:
+ms.close=Sluiten
+ms.add=Server toevoegen aan de serverlijst
+ms.f.map=Mapnaam
+ms.f.gametype=Speltype
+ms.f.pure=Puur
+ms.f.password=Wachtwoord
+ms.f.mod=Mod
+ms.f.voice=Spraak
+ms.f.active=Actief
+ms.f.maxPing=Max. ping
+ms.f.maxClients=Max. spelers
+ms.f.players=Spelers
+ms.f.condition=Voorwaarde
+ms.f.notEmptyNotFull=Server is niet leeg en niet vol
+ms.f.country=Serverlocatie (bijv. HU):
+ms.f.apply=Filters toepassen
+ms.status.querying=Masterserver wordt opgevraagd…
+ms.status.noMaster=Geen antwoord van de masterserver!
+ms.status.scanning=Servers opvragen: %1 / %2
+ms.status.done=Klaar: %1 servers antwoordden, van %2 adressen.
+ms.status.added=Toegevoegd aan de serverlijst: %1
+ms.status.notFound=Niet gevonden: %1
+
+; ---- FTP
+ftp.group=FTP-toegang
+ftp.active=FTP actief
+ftp.passive=Passief FTP-protocol
+ftp.server=FTP-server:
+ftp.port=FTP-poort:
+ftp.test=Test
+ftp.user=FTP-gebruiker:
+ftp.password=FTP-wachtwoord:
+ftp.codPath=COD-map:
+ftp.pbssPath=PB-SS-map:
+ftp.pbssAuto=PB-SS automatisch / recursief (FTP-verwijderen uitgeschakeld)
+ftp.connecting=Verbinden…
+ftp.testOk=Verbonden: %1 (%2 mappen, %3 bestanden)
+ftp.testPassive=– werkte alleen in passieve modus, ik heb die ingeschakeld.
+ftp.error=FTP-fout:
+ftp.pickTitle=Map kiezen op de FTP
+ftp.pickHint=Dubbelklik: map openen.
+ftp.pickThis=Deze map
+ftp.up=↑ één map omhoog
+ftp.editorTitle=Serverbestanden bewerken via FTP
+ftp.dirs=Mappen op de FTP
+ftp.files=Bestanden op de FTP
+ftp.open=Openen
+ftp.save=Opslaan
+ftp.loading=Laden…
+ftp.downloading=Downloaden…
+ftp.uploading=Opslaan…
+ftp.listed=%1 mappen, %2 bestanden
+ftp.opened=Geopend: %1 (%2 bytes)
+ftp.saved=Bestand opgeslagen: %1
+ftp.passiveUsed=(in passieve modus)
+ftp.askDiscard=De wijzigingen in %1 zijn niet opgeslagen. Weggooien?
+ftp.askSave=Dit bestand op de server overschrijven?\n%1
+ftp.notActive=FTP is niet ingeschakeld voor deze server.\n\nInstellen: Server bewerken → FTP-toegang.
+
+; ---- Jogok
+rights.title=Rechten
+rights.label=Rechten:
+rights.changePw=Wachtwoord wijzigen:
+rights.security=Beveiligingssysteem
+rights.enable=inschakelen
+rights.disable=uitschakelen
+rights.list=Rechten:
+rights.hint=Ingeschakeld kunnen adres, rcon-wachtwoord en FTP niet worden gewijzigd, en de niet aangevinkte functies zijn voor deze server geblokkeerd. Uitschakelen kan alleen met het wachtwoord.
+rights.emptyPw=Het wachtwoordveld is leeg!
+rights.wrongPw=Verkeerd wachtwoord!
+rights.denied=Hiervoor heb je op deze server geen recht: %1 (Server bewerken → Rechten)
+rights.pwLocked=Voor deze server is het beveiligingssysteem ingeschakeld: het rcon-wachtwoord kan niet worden gewijzigd.
+rights.noFtpEdit=Je hebt geen recht om op deze server bestanden op te slaan (FTP-EditFiles).
+right.kick=Kicken
+right.ban=Bannen
+right.restart=Map herstarten/herladen
+right.mapload=Map wisselen
+right.rotationedit=Maprotatie bewerken
+right.gametype=Speltype wisselen
+right.gconfig=Speltype-instellingen
+right.execcfg=Server-CFG uitvoeren
+right.setpw=Openbaar wachtwoord instellen
+right.weaponedit=Wapens bewerken
+right.varlistedit=Servervariabelen bewerken
+right.pb=PunkBuster
+right.pam=PAM-MOD
+right.mods=MODs
+right.console=Rcon-console
+right.perk=Perks instellen
+right.pbss_view=PB-screenshots bekijken
+right.pbss_delftp=PB-screenshots op de FTP verwijderen
+right.ftp_editfiles=FTP: bestanden opslaan
+right.ftp_viewfiles=FTP: bestanden bekijken
+
+; ---- Gyorsgombok
+qc.title=Sneltoetsen (Quick-Commando)
+qc.enable=Sneltoetsen inschakelen
+qc.fastRestart=Map snel herstarten:
+qc.reload=Map herladen:
+qc.mapChange=Map wisselen:
+qc.gametype=Speltype:
+qc.killCod=COD-proces stoppen:
+qc.clear=Wissen
+qc.aliases=Mapwissel-aliassen
+qc.colMap=Mapnaam
+qc.colAlias=Alias-opdracht
+qc.add=Item toevoegen
+qc.del=Item verwijderen
+qc.addTitle=Mapwissel-alias toevoegen
+qc.addHint=De alias: wat je na de Map wisselen-sneltoets typt (letters, cijfers).
+qc.help=Map wisselen:\n[Map wisselen-sneltoets] → map-alias → [ENTER] → de map wisselt\n\nAnnuleren:\n[Map wisselen-sneltoets] → verkeerde alias → [BACKSPACE] → opdracht geannuleerd\n\nSpeltype wijzigen:\n[Speltype-sneltoets] → tdm → [ENTER] → tdm wordt geladen\n\nDe opdrachten gaan naar de geselecteerde server; de sneltoetsen werken ook tijdens het spelen.
+qc.saved=Sneltoetsen opgeslagen.
+qc.saveFailed=De sneltoetsen konden niet worden opgeslagen (shortcutctrl.cfg / mapaliases.dat).
+qc.registerFailed=Deze sneltoets kon niet worden vastgelegd: %1
+qc.noServer=Sneltoets: kies een server met een rcon-wachtwoord.
+qc.typeMap=Sneltoets: typ de map-alias, dan Enter (Backspace: annuleren).
+qc.typeGametype=Sneltoets: typ het speltype (bijv. tdm), dan Enter (Backspace: annuleren).
+qc.cancelled=Sneltoets: geannuleerd.
+qc.unknownAlias=Sneltoets: onbekende map-alias: %1
+qc.badGametype=Sneltoets: ongeldig speltype: %1
+qc.killed=COD gestopt (%1 proces).
+qc.noCod=COD draait niet.

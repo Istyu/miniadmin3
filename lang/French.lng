@@ -1,0 +1,521 @@
+; miniAdmin3 – fichier de langue (UTF-8)
+; Format : clé=texte   \n = nouvelle ligne   %1, %2 … = valeur insérée par le programme
+language.name=Français
+language.prefix=fr
+
+; ---- menu
+menu.file=Fichier
+menu.settings=Paramètres…
+menu.guidDb=Base de données des GUID…
+menu.masterList=Liste du serveur maître…
+menu.lastBans=Derniers bans…
+menu.shortcuts=Raccourcis…
+menu.saveServers=Enregistrer la liste des serveurs
+menu.exit=Quitter
+menu.serverList=Liste des serveurs
+menu.join=Rejoindre le serveur
+menu.rconCheck=Vérification rcon
+menu.ftpEdit=Modifier les fichiers du serveur par FTP…
+menu.addServer=Ajouter un serveur…
+menu.refreshAll=Actualiser tous les serveurs
+menu.autoRefresh=Actualisation automatique (1 s)
+menu.editServer=Modifier le serveur…
+menu.removeServer=Supprimer le serveur
+menu.removeAll=Supprimer tous les serveurs
+menu.playerList=Liste des joueurs
+menu.playersRefresh=Actualiser la liste des joueurs (rcon status)
+menu.kickAll=Expulser tous les joueurs
+menu.about=À propos
+
+; ---- fenêtre principale
+main.addrCue=Saisissez ici IP:PORT pour ajouter un serveur
+main.passCue=mot de passe rcon
+main.setPassword=Définir le mot de passe
+col.info=Info
+col.ping=Ping
+col.serverName=Nom du serveur
+col.gtMap=Type de jeu / Map
+col.players=Joueurs
+col.hostPort=Hôte:Port
+col.hostInfo=Infos hôte
+col.variable=Variable
+col.content=Contenu
+col.name=Nom
+col.score=Score
+col.alias=Alias
+col.rate=Rate
+col.value=Valeur
+col.description=Description
+tab.players=Liste des joueurs
+tab.maps=Liste des maps
+tab.gametypes=Types de jeu
+tab.weapons=Armes
+tab.perks=Atouts (Perks)
+tab.serverVars=Variables du serveur
+tab.punkbuster=PunkBuster
+tab.pam=PAM-MOD
+tab.console=Console rcon
+tab.mods=MODs
+
+; ---- onglet Liste des joueurs
+players.msgCue=Message
+players.tell=Message (tell)
+players.say=À tous (say)
+players.kick=Kick
+players.ban=Ban
+players.tempban=Ban temporaire
+players.refresh=Actualiser (rcon)
+players.empty.noServer=Sélectionnez un serveur dans la liste.
+players.empty.offline=Le serveur est injoignable.
+players.empty.noPlayers=Aucun joueur sur le serveur.
+player.who=%1 (slot %2)
+
+; ---- Liste des maps / Types de jeu / Console rcon
+maps.load=Obtenir la liste
+maps.change=Changer de map
+maps.restart=Redémarrer la map
+maps.fastRestart=Redémarrage rapide
+maps.mapMode=Changer map/mode
+gt.set=Appliquer
+gt.valueCue=nouvelle valeur (Entrée)
+console.inputCue=commande rcon (Entrée = envoyer)
+console.send=Envoyer
+console.noReply=(pas de réponse)
+console.sent=(envoyé)
+console.statusUnparsed=[réponse status illisible, texte brut :]
+console.statusNoPlayers=[aucun joueur lisible dans la réponse status, texte brut :]
+
+; ---- barre d'état
+status.querying=Interrogation des serveurs…
+status.serversOnline=%1/%2 serveurs joignables
+status.geoLoaded=geoip.csv : %1 plages IPv4 chargées
+status.geoMissing=geoip.csv non chargé (absent ou format inconnu)
+status.sel.online= – en ligne, %1 joueurs
+status.sel.offline= – injoignable
+status.sel.noRcon= – pas de mot de passe rcon (sans GUID/IP/Alias)
+status.selectServer=Sélectionnez d'abord un serveur.
+status.selectPlayer=Sélectionnez un joueur dans la liste.
+status.selectMap=Sélectionnez une map.
+status.selectMode=Sélectionnez un mode de jeu.
+status.typeMessage=Saisissez un message dans le champ.
+status.noRconPw=Aucun mot de passe rcon n'est défini pour ce serveur.
+status.rconWait=rcon : attente de la fin de la commande précédente…
+status.noReply=Pas de réponse (mauvais mot de passe ou serveur injoignable).
+status.badRconPw=Mot de passe rcon incorrect.
+status.statusUnparsed=La réponse status est illisible – le texte brut se trouve dans l'onglet Console rcon.
+status.statusUnknown=Format de status inconnu – le texte brut se trouve dans l'onglet Console rcon.
+status.playersRcon=%1 joueurs (rcon status)
+status.mapCount=%1 maps
+status.gtNeedsRcon=Changer le type de jeu nécessite une connexion rcon.
+status.needsRcon=Une connexion rcon est nécessaire.
+mod.varList=Variables du MOD :
+mod.cmdList=Commandes du MOD :
+col.command=Commande
+status.selectCmd=Sélectionnez une commande.
+ask.modCmd=Exécuter sur le serveur : %1 ?\n%2
+pam.set=Définir le mode PAM
+pam.none=Aucun mode PAM pour ce jeu (codcfg\\%1.pmm).
+status.selectPamMode=Sélectionnez un mode PAM.
+status.pamModeSet=Définition du mode PAM : %1 …
+pb.plist=Liste des joueurs PB
+pb.ver=Version de PB
+pb.getss=Demander des captures
+pb.update=Mettre à jour PB
+pb.restart=Redémarrer PB
+sv.cfgGroup=Lancer un CFG
+sv.run=Lancer
+sv.pwGroup=Mot de passe du serveur
+sv.otherGroup=Autres variables
+sv.pwCue=vide = pas de mot de passe
+status.selectCfg=Sélectionnez (ou saisissez) un fichier cfg.
+ask.execCfg=Exécuter sur le serveur : exec %1 ?
+ask.noPassword=(pas de mot de passe)
+ask.setPassword=Définir le mot de passe du serveur : %1 ?
+status.cfgCount=%1 fichiers cfg sur le serveur
+status.noValue=Le serveur n'a renvoyé aucune valeur.
+status.gtVarSet=%1 défini.
+status.selectVar=Sélectionnez une variable.
+status.done=Terminé.
+status.sent=Envoyé.
+status.sentNoReply=Envoyé – le serveur n'a pas répondu.
+status.kickAllNeedsRcon=Expulser tous les joueurs nécessite une connexion rcon.
+status.noKickable=Aucun joueur à expulser.
+status.kickAll.progress=Expulsion de tous les joueurs : %1/%2 …
+status.kickAll.done=Tous les joueurs ont été expulsés (%1).
+status.rconPwSet=Le mot de passe rcon a été défini.
+status.rconPwCleared=Le mot de passe rcon a été effacé.
+status.serverEdited=Le serveur a été modifié.
+status.allRemoved=Tous les serveurs ont été supprimés.
+status.serversSaved=Liste des serveurs enregistrée.
+status.saveServersFailed=Impossible d'enregistrer la liste des serveurs.
+status.saveBansFailed=Impossible d'enregistrer lastbans.db.
+status.saveGuidsFailed=Impossible d'enregistrer guids.dat.
+status.guidsSaved=guids.dat enregistré.
+status.exported=Exporté : %1
+status.unbanSent=Unban envoyé : %1
+status.settingsSaved=Paramètres enregistrés.
+status.saveSettingsFailed=Impossible d'enregistrer les paramètres (settings.ini).
+
+; ---- messages, questions
+msg.badAddress=Adresse invalide. Format : IP:PORT
+msg.serverExists=Ce serveur est déjà dans la liste.
+msg.slotUnknown=Le numéro de slot du joueur est encore inconnu : getstatus ne fournit pas les slots.\nCliquez sur « Actualiser (rcon) » pour l'obtenir via rcon status.
+ask.removeServer=Supprimer ce serveur de la liste ?\n\n%1
+ask.removeAll=Supprimer TOUS les serveurs de la liste ? (%1)\n\nCette action est irréversible.
+ask.kick=Expulser %1 ?
+ask.ban=BANNIR %1 ?
+ask.tempban=Bannir temporairement %1 ?
+ask.kickAll=Expulser TOUS les joueurs (%1) de ce serveur ?\n%2
+ask.mapChange=Passer à la map %1 ?
+ask.mapModeChange=Changer map/mode : %1 / %2 ?
+ask.gtChange=Changer le type de jeu en %1 ?\n(set g_gametype, puis map_restart)
+ask.mapRestart=Redémarrer la map (map_restart) ?
+ask.fastRestart=Redémarrage rapide de la map (fast_restart) ?
+
+; ---- boutons, boîte de dialogue de fichier
+btn.ok=OK
+btn.cancel=Annuler
+btn.close=Fermer
+file.programs=Programmes (*.exe)
+file.all=Tous les fichiers
+file.guidDb=Base de données des GUID (guids.dat; *.dat; *.gid)
+
+; ---- Paramètres
+settings.title=Paramètres
+settings.refresh.group=Actualisation des serveurs (automatique)
+settings.refresh.all=Communiquer avec tous les serveurs visibles
+settings.refresh.selected=Communiquer uniquement avec le serveur sélectionné (connexion Internet lente)
+settings.refresh.two=Communiquer avec 2 serveurs à la fois seulement (connexion Internet lente)
+settings.paths.group=Chemins d'installation de Call of Duty (Rejoindre le serveur)
+settings.paths.colGame=Jeu;protocole
+settings.paths.colVersion=Version
+settings.paths.colExe=Chemin de l'exe
+settings.paths.hint=Sélectionnez une ligne et indiquez le .exe du jeu. S'il n'y a pas de chemin pour la version du serveur, n'importe quelle ligne configurée du jeu est utilisée.
+settings.browse=Parcourir…
+settings.browseTitle=Exécutable de Call of Duty
+settings.launch.group=Paramètres supplémentaires, transmis au démarrage de CoD
+settings.cmd.group=Commande/programme à lancer en rejoignant un serveur
+settings.cmd.hint=(p. ex. un programme de chat vocal ; mettez entre guillemets les chemins contenant des espaces)
+settings.join.group=En rejoignant un serveur, le programme doit
+settings.join.keep=Rester ouvert
+settings.join.minimize=Se réduire (aucun trafic réseau)
+settings.join.close=Se fermer
+settings.add.group=Ajouter un serveur
+settings.add.top=En début de liste
+settings.add.bottom=En fin de liste
+settings.add.after=Après l'élément :
+settings.nick=Votre pseudo (préfixe des messages) :
+settings.nick.hint=Par défaut : ^9mini^4Admin: ^7 (les ^chiffres sont des codes couleur, ^7 est le blanc, la couleur par défaut)
+settings.language=Langue
+settings.pingButton=Visualisation du ping…
+settings.log=Journaliser les commandes (cmdlog.txt)
+settings.other.group=Divers
+settings.windowPos=Enregistrer la position de la fenêtre principale
+settings.colored=Noms de joueurs/serveurs en couleur
+settings.askDelete=Demander avant de supprimer un serveur
+
+; ---- Visualisation du ping
+ping.title=Paramètres du ping
+ping.coloring=Couleurs du ping
+ping.level=Niveau %1
+ping.meter=Indicateur de ping
+ping.enabled=Activé
+ping.colored=En couleur
+ping.maxLevel=Niveau max
+
+; ---- Rejoindre le serveur
+join.title=Rejoindre le serveur
+join.server=Serveur :
+join.name=Nom du joueur
+join.password=Mot de passe
+join.connect=Se connecter
+color.0=Noir
+color.1=Rouge
+color.2=Vert
+color.3=Jaune
+color.4=Bleu foncé
+color.5=Turquoise
+color.6=Rose
+color.7=Blanc
+color.8=Couleur d'équipe
+color.9=Gris
+rconcheck.noPw=Aucun mot de passe rcon n'est défini pour ce serveur !
+rconcheck.ok=La connexion rcon a réussi !
+rconcheck.fail=La connexion rcon a échoué !
+rconcheck.noReply=Le serveur n'a pas répondu (mauvais mot de passe ou serveur injoignable).
+join.noPath=Aucun chemin d'installation n'est défini pour ce jeu : %1\n\nRéglez-le dans Fichier → Paramètres → Chemins d'installation de Call of Duty.
+join.exeMissing=L'exécutable indiqué est introuvable :\n%1
+join.launchFailed=Impossible de lancer le jeu (code d'erreur : %1).
+join.cmdFailed=Le jeu a démarré, mais la commande/le programme indiqué n'a pas pu être lancé.
+join.joining=Connexion : %1
+
+; ---- Ajouter / modifier un serveur
+server.address=IP:Port du serveur
+server.rconPw=Mot de passe rcon
+server.rconPwHint=Laisser vide si inconnu !
+edit.hidePw=Masquer le mot de passe dans le journal (cmdlog.txt)
+add.title=Ajouter un nouveau serveur
+add.ownName=Nom de serveur personnalisé
+add.ownNameHint=laisser vide pour l'interrogation automatique
+add.format=L'adresse du serveur doit avoir le format suivant :
+add.example=83.122.98.10:28961 ou ds8af33.23.100.25:29384dsid93
+add.filtered=La combinaison IP:Port est extraite automatiquement
+edit.title=Modifier le serveur
+edit.format=L'adresse du serveur doit avoir le format suivant : IP:PORT
+
+; ---- Base de données des GUID
+guid.title=Base de données des GUID
+guid.colName=Dernier nom
+guid.colIp=Dernière IP
+guid.colSeen=Vu pour la dernière fois
+guid.searchGroup=Rechercher pseudo/GUID/IP
+guid.searchTerm=Terme recherché :
+guid.search=Rechercher
+guid.results=Résultats :
+guid.searchHint=Saisissez un nom, un GUID ou une IP.
+guid.noResult=Aucun résultat.
+guid.count=GUID dans la base : %1
+guid.deleteAll=Vider la base des GUID
+guid.askDeleteAll=Supprimer toute la base des GUID ? (%1 enregistrements)\n\nUne copie de sauvegarde unique de guids.dat est conservée (guids.dat.bak).
+guid.export=Exporter la liste des GUID
+guid.exportFailed=L'exportation a échoué.
+guid.import=Importer une liste de GUID
+guid.importBadFile=Le fichier est illisible ou son format est inconnu.\nFormat attendu : les enregistrements de 98 octets de guids.dat.
+guid.importResult=%1 nouveaux GUID, %2 mis à jour, %3 inchangés / ignorés.
+
+; ---- Derniers bans
+bans.title=Derniers bans
+bans.windowTitle=Derniers bans (miniAdmin, PunkBuster)
+bans.colName=Nom
+bans.colServer=Serveur
+bans.colTime=Date
+bans.unban=Débannir le joueur sélectionné
+bans.selectPlayer=Sélectionnez un joueur dans la liste.
+bans.serverMissing=Le serveur (%1) n'est pas dans la liste des serveurs.\nAjoutez-le avec son mot de passe rcon, puis réessayez.
+bans.noRcon=Aucune connexion rcon pour ce serveur (mot de passe absent ou incorrect, ou serveur injoignable).
+bans.askUnban=Lever le ban ?\n%1
+
+; ---- Types de jeu : description des variables intégrées
+gtvar.scorelimit=Limite de score (0 = aucune)
+gtvar.timelimit=Limite de temps en minutes (0 = aucune)
+gtvar.numlives=Nombre de vies (0 = illimité)
+gtvar.roundlimit=Nombre de manches
+gtvar.winlimit=Manches gagnées nécessaires pour remporter le match
+gtvar.roundswitch=Changement de camp toutes les N manches
+gtvar.playerrespawndelay=Délai de réapparition en secondes
+gtvar.waverespawndelay=Réapparition par vagues : tout le monde réapparaît ensemble toutes les N secondes (0 = désactivé)
+gtvar.bombtimer=Minuterie de la bombe en secondes
+gtvar.planttime=Temps de pose de la bombe en secondes
+gtvar.defusetime=Temps de désamorçage de la bombe en secondes
+gtvar.multibomb=Chaque attaquant porte une bombe (1 = oui)
+gtvar.hotpotato=Minuterie commune : le temps restant est conservé après un désamorçage (1 = oui)
+gtvar.flagcapturetime=Temps de capture d'un drapeau en secondes
+gtvar.roundlength=Durée d'une manche en minutes
+gtvar.graceperiod=Délai de grâce au début de la manche en secondes (on peut encore rejoindre)
+gtvar.respawn_wave_time=Réapparition par vagues : tout le monde réapparaît ensemble toutes les N secondes
+gtvar.alivepointtime=Un joueur en vie marque un point toutes les N secondes
+gtvar.showcarrier=Le porteur de l'objectif est affiché sur la boussole (1 = oui)
+gtvar.startrounddelay=Délai avant le début d'une manche en secondes
+gtvar.endrounddelay=Délai après la fin d'une manche en secondes
+gtvar.clearscoreeachround=Remise à zéro des scores au début de chaque manche (1 = oui)
+gtvar.globalbattlechatterprobability=Fréquence des cris de combat (battle chatter)
+gtvar.enemycarriervisible=Le porteur du drapeau ennemi est affiché sur la boussole
+gtvar.flagrespawntime=Délai avant la réapparition du drapeau en secondes
+gtvar.idleflagreturntime=Un drapeau lâché retourne à sa base après N secondes
+gtvar.touchreturn=Toucher son drapeau lâché le ramène à la base (1 = oui)
+gtvar.showoncompass=Les drapeaux sont affichés sur la boussole (1 = oui)
+gtvar.koth_autodestroytime=Le QG se détruit tout seul après N secondes
+gtvar.koth_spawntime=Délai avant l'apparition d'un nouveau QG en secondes
+gtvar.koth_kothmode=Mode King of the Hill classique (0 = désactivé, 1 = activé)
+gtvar.koth_capturetime=Temps de capture du QG en secondes
+gtvar.koth_destroytime=Temps de destruction du QG en secondes
+gtvar.koth_delayplayer=L'équipe qui tient le QG réapparaît avec un délai (0 = désactivé, 1 = activé)
+gtvar.koth_spawndelay=Délai de réapparition en secondes de l'équipe qui tient le QG (si koth_delayPlayer = 1)
+gtvar.twar_capturetime=Temps de capture d'un drapeau en secondes
+gtvar.twar_finalfighttimelimit=Limite de temps du combat final
+gtvar.twar_showenemycount=Afficher le nombre d'ennemis (0 = désactivé, 1 = activé)
+gtvar.twar_momentumenabled=Système de momentum activé ou non (0 = désactivé, 1 = activé)
+gtvar.twar_momentummax=Valeur maximale du momentum
+
+; ---- Armes / Atouts : modèles de description (%1, %2 = noms affichés dans le jeu)
+wpvar.weapon=Autoriser %1 (0 = désactivé, 1 = activé)
+wpvar.attach=%1 : autoriser l'accessoire %2 (0 = désactivé, 1 = activé)
+wpvar.attachNone=%1 : autoriser la version sans accessoire (0 = désactivé, 1 = activé)
+wpvar.allowdrop=Classe %1 : un joueur tué lâche son arme (0 = non, 1 = oui)
+wpvar.movespeed=Classe %1 : multiplicateur de la vitesse de déplacement
+wpvar.classlimit=Classe %1 : nombre maximal de joueurs pouvant la choisir
+wpvar.classitem=Classe %1, équipement par défaut : %2
+wpvar.perk=Autoriser l'atout %1 (0 = désactivé, 1 = activé)
+wpvar.perkvalue=Puissance de l'atout %1 (pourcentage)
+wpvar.flakjacketmax=Flak Jacket : limite des dégâts d'explosion
+wpvar.laststand=Last Stand : un joueur à terre succombe après N secondes
+wpcat.assault=Fusils d'assaut
+wpcat.smg=Pistolets-mitrailleurs
+wpcat.shotgun=Fusils à pompe
+wpcat.lmg=Mitrailleuses légères
+wpcat.sniper=Fusils de précision
+wpcat.pistol=Pistolets
+wpitem.primary=arme principale
+wpitem.primary_attachment=accessoire de l'arme principale
+wpitem.secondary=arme secondaire
+wpitem.secondary_attachment=accessoire de l'arme secondaire
+wpitem.perk=atout 1
+wpitem.perk2=atout 2
+wpitem.perk3=atout 3
+wpitem.grenade=type de grenade spéciale
+wpitem.camo=camouflage
+wpitem.frags=nombre de grenades à fragmentation
+wpitem.special=nombre de grenades spéciales
+
+; ---- À propos
+about.origTitle=À propos du miniAdmin3 d'origine
+about.origBy=Créé par : %1
+about.origNote=Le site web et le forum du programme d'origine (muckl.dyndns.org) ne sont plus accessibles ; les menus Forum, Modifications et Mise à jour automatique sont donc absents ici.
+about.rebuild=Une recréation du miniAdmin3 %1 d'origine (Supermuckl, Deois Gaming) sous forme de programme Win32 C++ natif.
+about.rebuiltBy=Recréé par : %1
+about.origData=Les fichiers de données d'origine (images des cartes, drapeaux, listes de modes de jeu et d'armes, etc.) et les images proviennent du programme d'origine.
+about.geo=Données des pays (si geoip.csv provient de DB-IP, CC BY 4.0) :
+
+; ---- Masterszerver lista
+ms.title=Liste du serveur maître
+ms.tabList=Liste des serveurs
+ms.tabFilter=Filtre
+ms.col.address=Adresse du serveur
+ms.col.ping=Ping
+ms.col.name=Nom du serveur
+ms.col.map=Carte/Type
+ms.col.players=Joueurs
+ms.col.maxPing=Ping max
+ms.col.mod=MOD
+ms.col.pure=Pur
+ms.col.password=Mot de passe
+ms.scanGroup=Analyser la liste
+ms.refresh=Actualiser
+ms.version=Version de COD :
+ms.searchGroup=Rechercher un serveur
+ms.searchName=Nom du serveur
+ms.search=Rechercher
+ms.servers=Serveurs :
+ms.visible=Visibles :
+ms.close=Fermer
+ms.add=Ajouter le serveur à la liste
+ms.f.map=Nom de la carte
+ms.f.gametype=Type de jeu
+ms.f.pure=Pur
+ms.f.password=Mot de passe
+ms.f.mod=Mod
+ms.f.voice=Voix
+ms.f.active=Actif
+ms.f.maxPing=Ping max
+ms.f.maxClients=Joueurs max
+ms.f.players=Joueurs
+ms.f.condition=Condition
+ms.f.notEmptyNotFull=Le serveur n'est ni vide ni plein
+ms.f.country=Emplacement du serveur (ex. HU) :
+ms.f.apply=Appliquer les filtres
+ms.status.querying=Interrogation du serveur maître…
+ms.status.noMaster=Aucune réponse du serveur maître !
+ms.status.scanning=Interrogation des serveurs : %1 / %2
+ms.status.done=Terminé : %1 serveurs ont répondu sur %2 adresses.
+ms.status.added=Ajouté à la liste des serveurs : %1
+ms.status.notFound=Introuvable : %1
+
+; ---- FTP
+ftp.group=Accès FTP
+ftp.active=FTP actif
+ftp.passive=Mode FTP passif
+ftp.server=Serveur FTP :
+ftp.port=Port FTP :
+ftp.test=Test
+ftp.user=Utilisateur FTP :
+ftp.password=Mot de passe FTP :
+ftp.codPath=Dossier COD :
+ftp.pbssPath=Dossier PB-SS :
+ftp.pbssAuto=PB-SS automatique / récursif (suppression FTP désactivée)
+ftp.connecting=Connexion…
+ftp.testOk=Connecté : %1 (%2 dossiers, %3 fichiers)
+ftp.testPassive=– ne fonctionnait qu'en mode passif, je l'ai activé.
+ftp.error=Erreur FTP :
+ftp.pickTitle=Choisir un dossier sur le FTP
+ftp.pickHint=Double-clic : ouvrir le dossier.
+ftp.pickThis=Ce dossier
+ftp.up=↑ dossier parent
+ftp.editorTitle=Modifier les fichiers du serveur par FTP
+ftp.dirs=Dossiers sur le FTP
+ftp.files=Fichiers sur le FTP
+ftp.open=Ouvrir
+ftp.save=Enregistrer
+ftp.loading=Chargement…
+ftp.downloading=Téléchargement…
+ftp.uploading=Enregistrement…
+ftp.listed=%1 dossiers, %2 fichiers
+ftp.opened=Ouvert : %1 (%2 octets)
+ftp.saved=Fichier enregistré : %1
+ftp.passiveUsed=(en mode passif)
+ftp.askDiscard=Les modifications de %1 ne sont pas enregistrées. Les abandonner ?
+ftp.askSave=Écraser ce fichier sur le serveur ?\n%1
+ftp.notActive=Le FTP n'est pas activé pour ce serveur.\n\nÀ régler : Modifier le serveur → Accès FTP.
+
+; ---- Jogok
+rights.title=Droits
+rights.label=Droits :
+rights.changePw=Changer le mot de passe :
+rights.security=Système de sécurité
+rights.enable=activer
+rights.disable=désactiver
+rights.list=Droits :
+rights.hint=Activé, l'adresse, le mot de passe rcon et le FTP ne peuvent pas être modifiés, et les fonctions non cochées sont bloquées pour ce serveur. Désactivation uniquement avec le mot de passe.
+rights.emptyPw=Le champ du mot de passe est vide !
+rights.wrongPw=Mot de passe incorrect !
+rights.denied=Vous n'avez pas ce droit sur ce serveur : %1 (Modifier le serveur → Droits)
+rights.pwLocked=Le système de sécurité est activé pour ce serveur : le mot de passe rcon ne peut pas être modifié.
+rights.noFtpEdit=Vous n'avez pas le droit d'enregistrer des fichiers sur ce serveur (FTP-EditFiles).
+right.kick=Expulser
+right.ban=Bannir
+right.restart=Redémarrer/recharger la carte
+right.mapload=Changer de carte
+right.rotationedit=Modifier la rotation des cartes
+right.gametype=Changer le type de jeu
+right.gconfig=Réglages du type de jeu
+right.execcfg=Exécuter un CFG du serveur
+right.setpw=Définir le mot de passe public
+right.weaponedit=Modifier les armes
+right.varlistedit=Modifier les variables du serveur
+right.pb=PunkBuster
+right.pam=PAM-MOD
+right.mods=MODs
+right.console=Console rcon
+right.perk=Réglages des atouts
+right.pbss_view=Voir les captures PB
+right.pbss_delftp=Supprimer les captures PB sur le FTP
+right.ftp_editfiles=FTP : enregistrer des fichiers
+right.ftp_viewfiles=FTP : voir les fichiers
+
+; ---- Gyorsgombok
+qc.title=Raccourcis (Quick-Commando)
+qc.enable=Activer les raccourcis
+qc.fastRestart=Redémarrage rapide de la carte :
+qc.reload=Recharger la carte :
+qc.mapChange=Changer de carte :
+qc.gametype=Type de jeu :
+qc.killCod=Arrêter le processus COD :
+qc.clear=Effacer
+qc.aliases=Alias de changement de carte
+qc.colMap=Carte
+qc.colAlias=Alias
+qc.add=Ajouter
+qc.del=Supprimer
+qc.addTitle=Ajouter un alias de carte
+qc.addHint=L'alias : ce que vous tapez après le raccourci Changer de carte (lettres, chiffres).
+qc.help=Changer de carte :\n[raccourci Changer de carte] → alias de la carte → [ENTRÉE] → la carte change\n\nAnnuler :\n[raccourci Changer de carte] → mauvais alias → [RETOUR ARRIÈRE] → commande annulée\n\nChanger le type de jeu :\n[raccourci Type de jeu] → tdm → [ENTRÉE] → tdm est chargé\n\nLes commandes vont au serveur sélectionné ; les raccourcis fonctionnent aussi en jeu.
+qc.saved=Raccourcis enregistrés.
+qc.saveFailed=Impossible d'enregistrer les raccourcis (shortcutctrl.cfg / mapaliases.dat).
+qc.registerFailed=Impossible d'enregistrer ce raccourci : %1
+qc.noServer=Raccourci : sélectionnez un serveur avec un mot de passe rcon.
+qc.typeMap=Raccourci : tapez l'alias de la carte, puis Entrée (Retour arrière : annuler).
+qc.typeGametype=Raccourci : tapez le type de jeu (ex. tdm), puis Entrée (Retour arrière : annuler).
+qc.cancelled=Raccourci : annulé.
+qc.unknownAlias=Raccourci : alias de carte inconnu : %1
+qc.badGametype=Raccourci : type de jeu invalide : %1
+qc.killed=COD arrêté (%1 processus).
+qc.noCod=COD ne tourne pas.

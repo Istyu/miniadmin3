@@ -1,0 +1,522 @@
+; miniAdmin3 – nyelvi fájl (UTF-8)
+; Formátum: kulcs=szöveg   \n = új sor   %1, %2 … = a program által behelyettesített érték
+; A hiányzó kulcsok helyén az English.lng szövege jelenik meg.
+language.name=Magyar
+language.prefix=hu
+
+; ---- menü
+menu.file=Fájl
+menu.settings=Beállítások…
+menu.guidDb=GUID-adatbázis…
+menu.masterList=Masterszerver lista…
+menu.lastBans=Nemrég bannoltak…
+menu.shortcuts=Gyorsgomb beállítások…
+menu.saveServers=Szerverlista mentése
+menu.exit=Kilépés
+menu.serverList=Szerverlista
+menu.join=Belépés a szerverre
+menu.rconCheck=Rcon ellenőrzés
+menu.ftpEdit=Szerverfájlok szerkesztése FTP-n…
+menu.addServer=Szerver hozzáadása…
+menu.refreshAll=Összes szerver frissítése
+menu.autoRefresh=Automatikus frissítés (1 mp)
+menu.editServer=Szerver szerkesztése…
+menu.removeServer=Szerver törlése
+menu.removeAll=Összes szerver törlése
+menu.playerList=Játékoslista
+menu.playersRefresh=Játékoslista frissítése (rcon status)
+menu.kickAll=Összes játékos kirúgása
+menu.about=Névjegy
+
+; ---- főablak
+main.addrCue=Írd ide a szerver IP:PORT-ját a hozzáadáshoz
+main.passCue=rcon jelszó
+main.setPassword=Jelszó beállítása
+col.info=Infó
+col.ping=Ping
+col.serverName=Szervernév
+col.gtMap=Játéktípus / Map
+col.players=Játékosok
+col.hostPort=Host:Port
+col.hostInfo=Hostinfó
+col.variable=Változó
+col.content=Tartalom
+col.name=Név
+col.score=Pontszám
+col.alias=Alias
+col.rate=Ráta
+col.value=Érték
+col.description=Leírás
+tab.players=Játékoslista
+tab.maps=Maplista
+tab.gametypes=Játéktípusok
+tab.weapons=Fegyverek
+tab.perks=Perkek
+tab.serverVars=Szerverváltozók
+tab.punkbuster=PunkBuster
+tab.pam=PAM-MOD
+tab.console=Rcon konzol
+tab.mods=MOD-ok
+
+; ---- Játékoslista fül
+players.msgCue=Üzenet
+players.tell=Üzenet (tell)
+players.say=Mindenkinek (say)
+players.kick=Kick
+players.ban=Ban
+players.tempban=Ideiglenes ban
+players.refresh=Frissítés (rcon)
+players.empty.noServer=Válassz ki egy szervert a listából.
+players.empty.offline=A szerver nem elérhető.
+players.empty.noPlayers=Nincs játékos a szerveren.
+player.who=%1 (slot %2)
+
+; ---- Maplista / Játéktípusok / Rcon konzol
+maps.load=Lista lekérése
+maps.change=Mapváltás
+maps.restart=Map restart
+maps.fastRestart=Gyors map restart
+maps.mapMode=Map/Mód váltás
+gt.set=Beállítás
+gt.valueCue=új érték (Enter)
+console.inputCue=rcon parancs (Enter = küldés)
+console.send=Küldés
+console.noReply=(nincs válasz)
+console.sent=(elküldve)
+console.statusUnparsed=[a status-válasz nem értelmezhető, nyers szöveg:]
+console.statusNoPlayers=[a status-válaszból nem olvasható ki játékos, nyers szöveg:]
+
+; ---- állapotsor
+status.querying=Szerverek lekérdezése…
+status.serversOnline=%1/%2 szerver elérhető
+status.geoLoaded=geoip.csv: %1 IPv4 tartomány betöltve
+status.geoMissing=geoip.csv nincs betöltve (hiányzik vagy ismeretlen a formátuma)
+status.sel.online= – elérhető, %1 játékos
+status.sel.offline= – nem elérhető
+status.sel.noRcon= – nincs rcon jelszó (GUID/IP/Alias nélkül)
+status.selectServer=Előbb válassz ki egy szervert.
+status.selectPlayer=Válassz ki egy játékost a listából.
+status.selectMap=Válassz ki egy mapot.
+status.selectMode=Válassz játékmódot.
+status.typeMessage=Írj üzenetet a mezőbe.
+status.noRconPw=Ehhez a szerverhez nincs rcon jelszó beállítva.
+status.rconWait=rcon: várakozás az előző parancs befejezésére…
+status.noReply=Nincs válasz (rossz jelszó vagy nem elérhető szerver).
+status.badRconPw=Rossz rcon jelszó.
+status.statusUnparsed=A status-válasz nem értelmezhető – a nyers szöveg az Rcon konzol fülön van.
+status.statusUnknown=A status formátuma ismeretlen – a nyers szöveg az Rcon konzol fülön van.
+status.playersRcon=%1 játékos (rcon status)
+status.mapCount=%1 map
+status.gtNeedsRcon=A játéktípus váltásához rcon bejelentkezés kell.
+status.needsRcon=Ehhez rcon bejelentkezés kell.
+mod.varList=MOD változólista:
+mod.cmdList=MOD parancslista:
+col.command=Parancs
+status.selectCmd=Válassz ki egy parancsot.
+ask.modCmd=Futtatod a szerveren: %1?\n%2
+pam.set=PAM-mód beállítása
+pam.none=Ehhez a játékhoz nincs PAM-mód (codcfg\\%1.pmm).
+status.selectPamMode=Válassz ki egy PAM-módot.
+status.pamModeSet=PAM-mód beállítása: %1 …
+pb.plist=PB játékoslista
+pb.ver=PB verzió
+pb.getss=Képernyőképek kérése
+pb.update=PB frissítése
+pb.restart=PB újraindítása
+sv.cfgGroup=CFG indítása
+sv.run=Futtatás
+sv.pwGroup=Szerverjelszó
+sv.otherGroup=Egyéb változók
+sv.pwCue=üres = nincs jelszó
+status.selectCfg=Válassz ki (vagy írj be) egy cfg fájlt.
+ask.execCfg=Futtatod a szerveren: exec %1?
+ask.noPassword=(nincs jelszó)
+ask.setPassword=Szerverjelszó beállítása: %1?
+status.cfgCount=%1 cfg fájl a szerveren
+status.noValue=A szerver nem adott értéket.
+status.gtVarSet=%1 beállítva.
+status.selectVar=Válassz ki egy változót.
+status.done=Kész.
+status.sent=Elküldve.
+status.sentNoReply=Elküldve – a szerver nem válaszolt.
+status.kickAllNeedsRcon=Az összes játékos kirúgásához rcon bejelentkezés kell.
+status.noKickable=Nincs kirúgható játékos.
+status.kickAll.progress=Összes játékos kirúgása: %1/%2 …
+status.kickAll.done=Összes játékos kirúgva (%1 db).
+status.rconPwSet=Az rcon jelszó beállítva.
+status.rconPwCleared=Az rcon jelszó törölve.
+status.serverEdited=A szerver módosítva.
+status.allRemoved=Az összes szerver törölve.
+status.serversSaved=Szerverlista mentve.
+status.saveServersFailed=A szerverlista mentése nem sikerült.
+status.saveBansFailed=A lastbans.db mentése nem sikerült.
+status.saveGuidsFailed=A guids.dat mentése nem sikerült.
+status.guidsSaved=A guids.dat mentve.
+status.exported=Exportálva: %1
+status.unbanSent=Unban elküldve: %1
+status.settingsSaved=Beállítások mentve.
+status.saveSettingsFailed=A beállítások mentése nem sikerült (settings.ini).
+
+; ---- üzenetek, kérdések
+msg.badAddress=Érvénytelen cím. Formátum: IP:PORT
+msg.serverExists=Ez a szerver már a listában van.
+msg.slotUnknown=A játékos slot-száma még ismeretlen: a getstatus nem ad slotot.\nNyomd meg a „Frissítés (rcon)” gombot, hogy az rcon status-ból megkapjuk.
+ask.removeServer=Törlöd a szervert a listából?\n\n%1
+ask.removeAll=Törlöd az ÖSSZES szervert a listából? (%1 db)\n\nEz nem vonható vissza.
+ask.kick=Kirúgod: %1?
+ask.ban=BANNOLOD: %1?
+ask.tempban=Ideiglenesen bannolod: %1?
+ask.kickAll=Kirúgod az ÖSSZES játékost (%1 db) erről a szerverről?\n%2
+ask.mapChange=Mapváltás: %1?
+ask.mapModeChange=Map/Mód váltás: %1 / %2?
+ask.gtChange=Játéktípus váltása: %1?\n(set g_gametype, majd map_restart)
+ask.mapRestart=Újraindítod a mapot (map_restart)?
+ask.fastRestart=Gyors map restart (fast_restart)?
+
+; ---- gombok, fájlpárbeszéd
+btn.ok=OK
+btn.cancel=Mégse
+btn.close=Bezárás
+file.programs=Programok (*.exe)
+file.all=Minden fájl
+file.guidDb=GUID-adatbázis (guids.dat; *.dat; *.gid)
+
+; ---- Beállítások
+settings.title=Beállítások
+settings.refresh.group=Szerverfrissítés (automatikus)
+settings.refresh.all=Kommunikálás minden látható szerverrel
+settings.refresh.selected=Kommunikálás csak a kijelölt szerverrel (lassú internetkapcsolatnál ajánlott)
+settings.refresh.two=Kommunikálás egyszerre csak 2 szerverrel (lassú internetkapcsolatnál ajánlott)
+settings.paths.group=Call of Duty telepítési útvonalak (Belépés a szerverre)
+settings.paths.colGame=Játék;protokoll
+settings.paths.colVersion=Verzió
+settings.paths.colExe=Exe útvonal
+settings.paths.hint=Jelölj ki egy sort, és add meg a játék .exe-jét. Ha a szerver verziójához nincs útvonal, a játék bármelyik beállított sora használható.
+settings.browse=Tallózás…
+settings.browseTitle=A Call of Duty indítófájlja
+settings.launch.group=Egyéb paraméter, a CoD indításakor lép érvénybe
+settings.cmd.group=Parancs/program indítása a szerverre belépéskor
+settings.cmd.hint=(pl. egy hangkommunikációs program; a szóközt tartalmazó útvonalat tedd idézőjelbe)
+settings.join.group=Szerverre belépéskor a program
+settings.join.keep=Hagyja nyitva a programot
+settings.join.minimize=Program lekicsinyítése (nincs adatforgalom)
+settings.join.close=Program bezárása
+settings.add.group=Szerver hozzáadása
+settings.add.top=A lista elejére
+settings.add.bottom=A lista végére
+settings.add.after=Ez az elem után:
+settings.nick=A te nickneved (az üzenetek előtagja):
+settings.nick.hint=Alap: ^9mini^4Admin: ^7 (a ^számok színkódok, a ^7 a fehér, az alapértelmezett szín)
+settings.language=Nyelv
+settings.pingButton=Ping vizualizáció…
+settings.log=Parancsok naplózása (cmdlog.txt)
+settings.other.group=Egyéb
+settings.windowPos=A főablak pozíciójának mentése
+settings.colored=Színes játékos/szervernevek
+settings.askDelete=Szerver törlése előtt rákérdezés
+
+; ---- Ping vizualizáció
+ping.title=Ping beállítások
+ping.coloring=Ping színezés
+ping.level=Pingszint %1
+ping.meter=Ping Meter
+ping.enabled=Engedélyezve
+ping.colored=Színezve
+ping.maxLevel=maxszint
+
+; ---- Belépés a szerverre
+join.title=Belépés a szerverre
+join.server=Szerver:
+join.name=Játékos neve
+join.password=Jelszó
+join.connect=Csatlakozás
+color.0=Fekete
+color.1=Piros
+color.2=Zöld
+color.3=Sárga
+color.4=Sötétkék
+color.5=Türkiz
+color.6=Rózsaszín
+color.7=Fehér
+color.8=Csapatszín
+color.9=Szürke
+rconcheck.noPw=Nincs rcon jelszó beállítva ehhez a szerverhez!
+rconcheck.ok=Az rcon bejelentkezés sikeres volt!
+rconcheck.fail=Az rcon bejelentkezés nem sikerült!
+rconcheck.noReply=A szerver nem válaszolt (rossz jelszó vagy nem elérhető szerver).
+join.noPath=Nincs beállítva telepítési útvonal ehhez a játékhoz: %1\n\nÁllítsd be: Fájl → Beállítások → Call of Duty telepítési útvonalak.
+join.exeMissing=A megadott indítófájl nem található:\n%1
+join.launchFailed=A játék indítása nem sikerült (hibakód: %1).
+join.cmdFailed=A játék elindult, de a megadott parancs/program indítása nem sikerült.
+join.joining=Belépés: %1
+
+; ---- Szerver hozzáadása / szerkesztése
+server.address=Szerver IP:Port
+server.rconPw=Rcon jelszó
+server.rconPwHint=Hagyd üresen, ha nem tudod!
+edit.hidePw=Jelszó elrejtése a naplóban (cmdlog.txt)
+add.title=Új szerver hozzáadása
+add.ownName=Saját szervernév
+add.ownNameHint=hagyd üresen az automatikus lekérdezéshez
+add.format=A szerver címét így kell beírnod:
+add.example=83.122.98.10:28961 vagy ds8af33.23.100.25:29384dsid93
+add.filtered=Az IP:Port kombinációt a program automatikusan kiszűri
+edit.title=Szerver szerkesztése
+edit.format=A szerver címét így kell beírnod: IP:PORT
+
+; ---- GUID-adatbázis
+guid.title=GUID-adatbázis
+guid.colName=Utolsó név
+guid.colIp=Utolsó IP
+guid.colSeen=Utoljára látva
+guid.searchGroup=Nick/GUID/IP keresése
+guid.searchTerm=Keresett kifejezés:
+guid.search=Keresés
+guid.results=Találatok:
+guid.searchHint=Írj be egy nevet, GUID-ot vagy IP-t.
+guid.noResult=Nincs találat.
+guid.count=GUID-ok az adatbázisban: %1
+guid.deleteAll=GUID-adatbázis törlése
+guid.askDeleteAll=Törlöd a teljes GUID-adatbázist? (%1 rekord)\n\nA guids.dat-ról egyszeri biztonsági másolat marad (guids.dat.bak).
+guid.export=Guidlista exportálása
+guid.exportFailed=Az exportálás nem sikerült.
+guid.import=Guidlista importálása
+guid.importBadFile=A fájl nem olvasható, vagy ismeretlen a formátuma.\nVárt formátum: a guids.dat 98 bájtos rekordjai.
+guid.importResult=%1 új GUID, %2 frissített, %3 változatlan / kihagyott rekord.
+
+; ---- Nemrég bannoltak
+bans.title=Nemrég bannoltak
+bans.windowTitle=Nemrég bannoltak (miniAdmin, PunkBuster)
+bans.colName=Név
+bans.colServer=Szerver
+bans.colTime=Időpont
+bans.unban=Kijelölt játékos unbanja
+bans.selectPlayer=Jelölj ki egy játékost a listában.
+bans.serverMissing=A szerver (%1) nincs a szerverlistában.\nVedd fel rcon jelszóval, majd próbáld újra.
+bans.noRcon=Ehhez a szerverhez nincs rcon bejelentkezés (hiányzó vagy hibás jelszó, esetleg nem elérhető a szerver).
+bans.askUnban=Feloldod a bant?\n%1
+
+; ---- Játéktípusok: a beépített változók leírása
+gtvar.scorelimit=Pontlimit (0 = nincs)
+gtvar.timelimit=Időlimit percben (0 = nincs)
+gtvar.numlives=Életek száma (0 = korlátlan)
+gtvar.roundlimit=Körök száma
+gtvar.winlimit=A meccs megnyeréséhez szükséges győzelmek száma
+gtvar.roundswitch=Oldalcsere ennyi körönként
+gtvar.playerrespawndelay=Újraéledési késleltetés másodpercben
+gtvar.waverespawndelay=Hullámos újraéledés: ennyi másodpercenként éled újra mindenki egyszerre (0 = ki)
+gtvar.bombtimer=A bomba időzítője másodpercben
+gtvar.planttime=A bomba lerakásának ideje másodpercben
+gtvar.defusetime=A bomba hatástalanításának ideje másodpercben
+gtvar.multibomb=Minden támadónál van bomba (1 = igen)
+gtvar.hotpotato=Közös bombaidőzítő: hatástalanítás után a maradék idő megmarad (1 = igen)
+gtvar.flagcapturetime=A zászló elfoglalásának ideje másodpercben
+gtvar.roundlength=Egy kör hossza percben
+gtvar.graceperiod=Türelmi idő a kör elején másodpercben (ennyi ideig lehet még beszállni)
+gtvar.respawn_wave_time=Hullámos újraéledés: ennyi másodpercenként éled újra mindenki egyszerre
+gtvar.alivepointtime=Ennyi másodpercenként kap pontot az életben lévő játékos
+gtvar.showcarrier=A tárgyat vivő játékos látszik az iránytűn (1 = igen)
+gtvar.startrounddelay=Várakozás a kör kezdete előtt másodpercben
+gtvar.endrounddelay=Várakozás a kör vége után másodpercben
+gtvar.clearscoreeachround=A pontszámok törlése minden kör elején (1 = igen)
+gtvar.globalbattlechatterprobability=A harci bemondások (battle chatter) gyakorisága
+gtvar.enemycarriervisible=Az ellenséges zászlóvivő látszik az iránytűn
+gtvar.flagrespawntime=A zászló újbóli megjelenéséig eltelt idő másodpercben
+gtvar.idleflagreturntime=Az elejtett zászló ennyi másodperc után visszakerül a helyére
+gtvar.touchreturn=Az elejtett saját zászló érintésre visszakerül (1 = igen)
+gtvar.showoncompass=A zászlók látszanak az iránytűn (1 = igen)
+gtvar.koth_autodestroytime=A főhadiszállás ennyi másodperc után magától megsemmisül
+gtvar.koth_spawntime=Az új főhadiszállás megjelenéséig eltelt idő másodpercben
+gtvar.koth_kothmode=Klasszikus King of the Hill mód (0 = ki, 1 = be)
+gtvar.koth_capturetime=A főhadiszállás elfoglalásának ideje másodpercben
+gtvar.koth_destroytime=A főhadiszállás lerombolásának ideje másodpercben
+gtvar.koth_delayplayer=A főhadiszállást tartó csapat késleltetéssel éledhet újra (0 = ki, 1 = be)
+gtvar.koth_spawndelay=A főhadiszállást tartó csapat újraéledési késleltetése másodpercben (ha koth_delayPlayer = 1)
+gtvar.twar_capturetime=A zászló elfoglalásának ideje másodpercben
+gtvar.twar_finalfighttimelimit=A végső csata időlimitje
+gtvar.twar_showenemycount=Az ellenfelek számának kijelzése (0 = ki, 1 = be)
+gtvar.twar_momentumenabled=A lendületrendszer (momentum) be- vagy kikapcsolása (0 = ki, 1 = be)
+gtvar.twar_momentummax=A lendület (momentum) legnagyobb értéke
+
+; ---- Fegyverek / Perkek: leírássablonok (%1, %2 = a játékban látható nevek)
+wpvar.weapon=%1 engedélyezése (0 = tiltva, 1 = engedélyezve)
+wpvar.attach=%1: %2 kiegészítő engedélyezése (0 = tiltva, 1 = engedélyezve)
+wpvar.attachNone=%1: kiegészítő nélküli változat engedélyezése (0 = tiltva, 1 = engedélyezve)
+wpvar.allowdrop=%1 osztály: a meghalt játékos fegyvere a földre esik (0 = nem, 1 = igen)
+wpvar.movespeed=%1 osztály: a mozgási sebesség szorzója
+wpvar.classlimit=%1 osztály: legfeljebb ennyi játékos választhatja
+wpvar.classitem=%1 osztály alapfelszerelése: %2
+wpvar.perk=%1 perk engedélyezése (0 = tiltva, 1 = engedélyezve)
+wpvar.perkvalue=%1 perk hatásának mértéke (százalék)
+wpvar.flakjacketmax=Flak Jacket: a robbanási sebzés felső határa
+wpvar.laststand=Last Stand: ennyi másodperc után vérzik el a földre került játékos
+wpcat.assault=Gépkarabélyok
+wpcat.smg=Géppisztolyok
+wpcat.shotgun=Sörétes puskák
+wpcat.lmg=Könnyű géppuskák
+wpcat.sniper=Mesterlövészpuskák
+wpcat.pistol=Pisztolyok
+wpitem.primary=elsődleges fegyver
+wpitem.primary_attachment=az elsődleges fegyver kiegészítője
+wpitem.secondary=másodlagos fegyver
+wpitem.secondary_attachment=a másodlagos fegyver kiegészítője
+wpitem.perk=1. perk
+wpitem.perk2=2. perk
+wpitem.perk3=3. perk
+wpitem.grenade=különleges gránát típusa
+wpitem.camo=álcázás
+wpitem.frags=repeszgránátok száma
+wpitem.special=különleges gránátok száma
+
+; ---- Névjegy
+about.origTitle=Az eredeti miniAdmin3-ról
+about.origBy=Készítette: %1
+about.origNote=Az eredeti program weboldala és fóruma (muckl.dyndns.org) már nem érhető el, ezért a Fórum, a Változások és az Automatikus frissítés menüpont itt elmarad.
+about.rebuild=Az eredeti miniAdmin3 %1 (Supermuckl, Deois Gaming) újraalkotása, natív Win32 C++ program.
+about.rebuiltBy=Újraalkotta: %1
+about.origData=Az eredeti adatfájlok (mapképek, zászlók, játéktípus- és fegyverlisták stb.) és a képek az eredeti programból származnak.
+about.geo=Országadatok (ha a geoip.csv a DB-IP-ből van, CC BY 4.0):
+
+; ---- Masterszerver lista
+ms.title=Masterszerver lista
+ms.tabList=Szerverlista
+ms.tabFilter=Szűrő
+ms.col.address=Szervercím
+ms.col.ping=Ping
+ms.col.name=Szervernév
+ms.col.map=Map/Típus
+ms.col.players=Játékos
+ms.col.maxPing=Max ping
+ms.col.mod=MOD
+ms.col.pure=Tiszta
+ms.col.password=Jelszó
+ms.scanGroup=Szerverlista vizsgálása
+ms.refresh=Frissítés
+ms.version=COD verzió:
+ms.searchGroup=Egy szerver keresése
+ms.searchName=Szervernév
+ms.search=Keresés
+ms.servers=Szerver:
+ms.visible=Látható:
+ms.close=Bezárás
+ms.add=Szerver hozzáadása a szerverlistához
+ms.f.map=Map neve
+ms.f.gametype=Játéktípus
+ms.f.pure=Tiszta
+ms.f.password=Jelszó
+ms.f.mod=Mod
+ms.f.voice=Hang
+ms.f.active=Aktív
+ms.f.maxPing=Max ping
+ms.f.maxClients=Max játékos
+ms.f.players=Játékosok
+ms.f.condition=Feltétel
+ms.f.notEmptyNotFull=A szerver nem üres és nincs tele
+ms.f.country=Szerver helye (pl. HU):
+ms.f.apply=Engedélyezés a szűrőkben
+ms.status.querying=Masterszerver lekérdezése…
+ms.status.noMaster=Nincs válasz a masterszervertől!
+ms.status.scanning=Szerverek lekérdezése: %1 / %2
+ms.status.done=Kész: %1 szerver válaszolt, %2 címből.
+ms.status.added=Hozzáadva a szerverlistához: %1
+ms.status.notFound=Nincs találat: %1
+
+; ---- FTP
+ftp.group=FTP elérés
+ftp.active=FTP aktív
+ftp.passive=Passzív FTP protokoll
+ftp.server=FTP szerver:
+ftp.port=FTP port:
+ftp.test=Teszt
+ftp.user=FTP felhasználó:
+ftp.password=FTP jelszó:
+ftp.codPath=COD mappa:
+ftp.pbssPath=PB-SS mappa:
+ftp.pbssAuto=PB-SS automatikus / rekurzív (FTP-fájltörlés letiltva)
+ftp.connecting=Kapcsolódás…
+ftp.testOk=Sikeres kapcsolódás: %1 (%2 mappa, %3 fájl)
+ftp.testPassive=– csak passzív módban ment, bekapcsoltam.
+ftp.error=FTP-hiba:
+ftp.pickTitle=Mappa választása az FTP-n
+ftp.pickHint=Dupla kattintás: belépés a mappába.
+ftp.pickThis=Ez a mappa
+ftp.up=↑ egy mappával feljebb
+ftp.editorTitle=Szerverfájlok szerkesztése FTP-n
+ftp.dirs=Mappák az FTP-n
+ftp.files=Fájlok az FTP-n
+ftp.open=Megnyitás
+ftp.save=Mentés
+ftp.loading=Betöltés…
+ftp.downloading=Letöltés…
+ftp.uploading=Mentés…
+ftp.listed=%1 mappa, %2 fájl
+ftp.opened=Megnyitva: %1 (%2 bájt)
+ftp.saved=Fájl mentve: %1
+ftp.passiveUsed=(passzív módban)
+ftp.askDiscard=A(z) %1 módosításai nincsenek elmentve. Elveted őket?
+ftp.askSave=Felülírod a szerveren ezt a fájlt?\n%1
+ftp.notActive=Ehhez a szerverhez nincs bekapcsolva az FTP.\n\nÁllítsd be: Szerver szerkesztése → FTP elérés.
+
+; ---- Jogok
+rights.title=Jogok
+rights.label=Jogok:
+rights.changePw=Jelszó módosítása:
+rights.security=Biztonsági rendszer
+rights.enable=engedélyezés
+rights.disable=letiltás
+rights.list=Jogok:
+rights.hint=Bekapcsolva a cím, az rcon jelszó és az FTP nem módosítható, és a ki nem pipált funkciók ennél a szervernél tiltva vannak. Kikapcsolni csak a jelszóval lehet.
+rights.emptyPw=Üres a jelszómező!
+rights.wrongPw=Rossz jelszó!
+rights.denied=Ehhez nincs jogod ennél a szervernél: %1 (Szerver szerkesztése → Jogok)
+rights.pwLocked=Ennél a szervernél be van kapcsolva a biztonsági rendszer: az rcon jelszó nem módosítható.
+rights.noFtpEdit=Ehhez a szerverhez nincs jogod fájlt menteni (FTP-EditFiles).
+right.kick=Kirúgás
+right.ban=Bannolás
+right.restart=Map restart / újratöltés
+right.mapload=Mapváltás
+right.rotationedit=Maprotáció szerkesztése
+right.gametype=Játéktípus váltása
+right.gconfig=Játéktípus beállításai
+right.execcfg=Szerver CFG futtatása
+right.setpw=Nyilvános jelszó beállítása
+right.weaponedit=Fegyverek szerkesztése
+right.varlistedit=Szerverváltozók szerkesztése
+right.pb=PunkBuster
+right.pam=PAM-MOD
+right.mods=MODok
+right.console=Rcon konzol
+right.perk=Perkek beállítása
+right.pbss_view=PB-screenshotok megtekintése
+right.pbss_delftp=PB-screenshotok törlése az FTP-n
+right.ftp_editfiles=FTP: fájlok mentése
+right.ftp_viewfiles=FTP: fájlok megtekintése
+
+; ---- Gyorsgombok
+qc.title=Gyorsgombok (Quick-Commando)
+qc.enable=Gyorsgombok engedélyezése
+qc.fastRestart=Map gyors restart gyorsgomb:
+qc.reload=Map újratöltés gyorsgomb:
+qc.mapChange=Mapváltás gyorsgomb:
+qc.gametype=Játéktípus gyorsgomb:
+qc.killCod=COD-folyamat megállítása gyorsgomb:
+qc.clear=Törlés
+qc.aliases=Mapváltás-aliasok
+qc.colMap=Mapname
+qc.colAlias=Alias-Commando
+qc.add=Elem hozzáadása
+qc.del=Elem törlése
+qc.addTitle=Mapváltás-alias hozzáadása
+qc.addHint=Az alias: amit a Mapváltás gyorsgomb után beírsz (betűk, számok).
+qc.help=Mapváltás:\n[Mapváltás gyorsgomb] → map alias → [ENTER] → a map megváltozik\n\nMapváltás megállítása:\n[Mapváltás gyorsgomb] → rossz map alias → [BACKSPACE] → parancs megállítva\n\nJátéktípus megváltoztatása:\n[Játéktípus gyorsgomb] → tdm → [ENTER] → tdm lesz betöltve\n\nA parancsok a kijelölt szerverre mennek; a gyorsgombok a játék közben is működnek.
+qc.saved=Gyorsgombok mentve.
+qc.saveFailed=A gyorsgombok mentése nem sikerült (shortcutctrl.cfg / mapaliases.dat).
+qc.registerFailed=Nem sikerült rögzíteni ezt a gyorsgombot: %1
+qc.noServer=Gyorsgomb: jelölj ki egy szervert, aminek van rcon jelszava.
+qc.typeMap=Gyorsgomb: írd be a map aliasát, majd Enter (Backspace: mégse).
+qc.typeGametype=Gyorsgomb: írd be a játéktípust (pl. tdm), majd Enter (Backspace: mégse).
+qc.cancelled=Gyorsgomb: megszakítva.
+qc.unknownAlias=Gyorsgomb: ismeretlen map alias: %1
+qc.badGametype=Gyorsgomb: érvénytelen játéktípus: %1
+qc.killed=A CoD leállítva (%1 folyamat).
+qc.noCod=Nem fut CoD.
